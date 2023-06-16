@@ -8,12 +8,16 @@ export const {
   globalCss,
   keyframes,
   getCssText,
-  createTheme
+  createTheme,
 } = createStitches({
   theme: {
     colors: {
-      white: '#fff',
-      black: '#000',
+      white: '#FBFBFB',
+      black: '#000000',
+
+      primary: '#963F33',
+      secondary: '#DDC4B6',
+      highlight: '#ABC4A9',
 
       gray900: '#171717',
       gray800: '#262626',
@@ -24,11 +28,12 @@ export const {
       gray300: '#d4d4d4',
       gray200: '#e5e5e5',
       gray100: '#f5f5f5',
-      gray50: '#fafafa'
+      gray50: '#fafafa',
     },
 
     fonts: {
-      roboto: 'Roboto, sans-serif'
+      quicksand: 'Quicksand, sans-serif',
+      carla: 'Carla, sans-serif',
     },
 
     fontSizes: {
@@ -40,11 +45,11 @@ export const {
       '2xl': '1.5rem',
       '3xl': '1.75rem',
       '4xl': '2rem',
-      '5xl': '2.25rem',
+      '5xl': '2.5rem',
       '6xl': '3rem',
       '7xl': '4rem',
       '8xl': '4.5rem',
-      '9xl': '6rem'
+      '9xl': '6rem',
     },
 
     fontWeights: {
@@ -53,14 +58,14 @@ export const {
       semibold: 600,
       bold: 700,
       extrabold: 800,
-      black: 900
+      black: 900,
     },
 
     lineHeights: {
       shorter: '125%',
       short: '140%',
       base: '160%',
-      tall: '180%'
+      tall: '180%',
     },
 
     space: {
@@ -78,7 +83,7 @@ export const {
       20: '5rem',
       40: '10rem',
       64: '16rem',
-      80: '20rem'
+      80: '20rem',
     },
 
     radii: {
@@ -87,23 +92,23 @@ export const {
       sm: '6px',
       md: '8px',
       lg: '16px',
-      full: '99999px'
+      full: '99999px',
     },
 
     shadows: {
-      default: '4px 4px 8px rgba(0, 0, 0, 0.25)'
+      default: '4px 4px 8px rgba(0, 0, 0, 0.25)',
     },
 
     transitions: {
       default: 'all 0.3s ease-in-out',
       fast: 'all 0.15s ease-in-out',
-      slow: 'all 0.45s ease-in-out'
-    }
+      slow: 'all 0.45s ease-in-out',
+    },
   },
 
   media: {
     bp1: '(max-width: 768px)',
     bp2: '(max-width: 576px)',
-    bp3: '(max-width: 480px)'
-  }
+    bp3: '(max-width: 480px)',
+  },
 })

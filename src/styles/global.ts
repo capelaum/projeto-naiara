@@ -4,23 +4,27 @@ export const globalStyles = globalCss({
   '*': {
     margin: 0,
     padding: 0,
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
   },
 
   html: {
-    scrollBehavior: 'smooth'
+    scrollBehavior: 'smooth',
   },
 
   body: {
-    fontFamily: '$roboto',
+    fontFamily: '$quicksand',
     '-webkit-font-smoothing': 'antialiased',
 
-    color: '$gray50',
-    backgroundColor: '$gray900'
+    color: '$primary',
+    backgroundColor: '$white',
   },
 
   'a, button': {
     cursor: 'pointer',
-    border: 'none'
-  }
+    border: 'none',
+  },
+
+  'h1, h2, h3, h4, h5, h6': {
+    fontFamily: '$carla',
+  },
 })

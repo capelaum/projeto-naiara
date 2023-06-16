@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Carla";
+  src: url('/fonts/carla/CarlaSansRegular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Carla";
+  src: url('/fonts/carla/CarlaSansSemiBold.ttf');
+  font-weight: semi-bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Carla";
+  src: url('/fonts/carla/CarlaSansBold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Carla";
+  src: url('/fonts/carla/CarlaSansLight.ttf');
+  font-weight: light;
+  font-style: normal;
+}

@@ -1,5 +1,5 @@
 {
-  "name": "next-13-template",
+  "name": "projeto-naiara",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -29,7 +29,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
-    "@ianvs/prettier-plugin-sort-imports": "^4.0.2",
+    "@rocketseat/eslint-config": "^1.2.0",
     "@testing-library/react": "^14.0.0",
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
