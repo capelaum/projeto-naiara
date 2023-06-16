@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Container } from '~/components/Container'
+import { Navbar } from '~/components/Navbar'
 import { HomeMain } from '~/styles/home'
 
 export default function Home() {
@@ -8,6 +9,8 @@ export default function Home() {
       <Head>
         <title>Naiara Galvão</title>
       </Head>
+
+      <Navbar />
 
       <HomeMain>
         <Container>
