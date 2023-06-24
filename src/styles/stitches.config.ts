@@ -53,6 +53,7 @@ export const {
     },
 
     fontWeights: {
+      light: 300,
       regular: 400,
       medium: 500,
       semibold: 600,
@@ -91,7 +92,7 @@ export const {
       xs: '4px',
       sm: '6px',
       md: '8px',
-      lg: '16px',
+      lg: '20px',
       full: '99999px',
     },
 
@@ -107,8 +108,9 @@ export const {
   },
 
   media: {
-    bp1: '(max-width: 768px)',
-    bp2: '(max-width: 576px)',
-    bp3: '(max-width: 480px)',
+    bp1: '(max-width: 992px)',
+    bp2: '(max-width: 768px)',
+    bp3: '(max-width: 576px)',
+    bp4: '(max-width: 480px)',
   },
 })
