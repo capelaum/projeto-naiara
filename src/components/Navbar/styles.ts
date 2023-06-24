@@ -11,6 +11,8 @@ export const NavbarWrapper = styled('header', {
 
   color: '$white',
 
+  zIndex: 999,
+
   background: 'rgba(150, 63, 51, 0.8)',
   backdropFilter: 'blur(3px)',
 })
