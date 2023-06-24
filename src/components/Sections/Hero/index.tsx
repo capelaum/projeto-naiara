@@ -8,7 +8,7 @@ import { HeroHeadingWrapper, HeroImageWrapper, HeroWrapper } from './styles'
 
 export function Hero() {
   const message = encodeURIComponent(
-    'Olá Isabela, gostaria de marcar uma consulta.',
+    'Olá Dra. Naiara, gostaria de saber mais sobre seus serviços.',
   )
 
   return (
@@ -30,11 +30,11 @@ export function Hero() {
 
         <ButtonLink
           size="xl"
-          href={`https://wa.me/5561981668336?text=${message}`}
+          href={`https://wa.me/5561992561470?text=${message}`}
           title="Agendar consulta!"
           target="_blank"
         >
-          <RiWhatsappFill size={26} />
+          <RiWhatsappFill size={28} />
           Agendar Consulta
         </ButtonLink>
       </HeroHeadingWrapper>
@@ -43,7 +43,7 @@ export function Hero() {
         <Image
           priority
           src={HeroImage}
-          alt="Foto profissional da psicóloga Isabela castelli sentada e com as mãos em um notebook cinza."
+          alt="Foto profissional da Dra. Naiara galvão, sentada de frente para uma mesa, com os braços cruzados e com um computador branco a sua frente, exibindo um largo sorriso caloroso."
         />
       </HeroImageWrapper>
     </HeroWrapper>

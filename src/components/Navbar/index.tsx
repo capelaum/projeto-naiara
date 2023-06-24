@@ -12,11 +12,15 @@ import {
 } from './styles'
 
 export function Navbar() {
+  const message = encodeURIComponent(
+    'Olá Dra. Naiara, gostaria de saber mais sobre seus serviços.',
+  )
+
   return (
     <NavbarWrapper>
       <NavbarContainer>
         <NavbarLeft>
-          <Link href="#" title="Início">
+          <Link href="#inicio" title="Início">
             <Image
               src={LogoWhite}
               alt="Logotipo da Dra. Naiara Galvão, tendo escrito abaixo o seu nome, suas especialidades: Ginecologia e Obstetrícia, e seu CRM DF/20851 | RQE 17851"
@@ -25,13 +29,24 @@ export function Navbar() {
           </Link>
 
           <NavBarSocial>
-            <Link href="#" title="E-mail da Dra. Naiara Galvão">
+            <Link
+              href="mailto:naigsilva@gmail.com"
+              title="E-mail da Dra. Naiara Galvão"
+            >
               <MdEmail size={27} />
             </Link>
-            <Link href="#" title="Instagram da Dra. Naiara Galvão">
+            <Link
+              href="https://www.instagram.com/naigalvao"
+              title="Instagram da Dra. Naiara Galvão"
+              target="_blank"
+            >
               <RiInstagramFill size={24} />
             </Link>
-            <Link href="#" title="Whatsapp da Dra. Naiara Galvão">
+            <Link
+              href={`https://wa.me/5561992561470?text=${message}`}
+              title="Whatsapp da Dra. Naiara Galvão"
+              target="_blank"
+            >
               <RiWhatsappFill size={24} />
             </Link>
           </NavBarSocial>

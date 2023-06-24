@@ -6,10 +6,10 @@ export const StyledButton = styled('button', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  gap: '1.125rem',
+  gap: '$4',
 
   borderRadius: '$full',
-  fontWeight: '$medium',
+  fontWeight: '$regular',
 
   transition: '$fast',
   textAlign: 'center',
