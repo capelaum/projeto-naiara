@@ -21,10 +21,10 @@ export const Heading = styled('h2', {
     },
 
     weight: {
-      light: { fontWeight: '$light' },
-      regular: { fontWeight: '$regular' },
-      semibold: { fontWeight: '$semibold' },
-      bold: { fontWeight: '$bold' },
+      light: { fontWeight: 300 },
+      regular: { fontWeight: 400 },
+      semibold: { fontWeight: 600 },
+      bold: { fontWeight: 700 },
     },
   },
 

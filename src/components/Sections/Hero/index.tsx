@@ -18,7 +18,7 @@ export function Hero() {
           Lorem ipsum dolor sit amet consectetur
         </Text>
 
-        <Heading size="xl" as="h1">
+        <Heading size="xl" as="h1" weight="regular">
           LOREM ipsum dolor sit amet consectetur.
         </Heading>
 
