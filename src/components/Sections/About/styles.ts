@@ -3,6 +3,18 @@ import { styled } from '~/styles/stitches.config'
 export const AboutWrapper = styled('section', {
   width: '100%',
 
+  position: 'relative',
+  overflow: 'hidden',
+
+  border: '1px solid red',
+
+  display: 'flex',
+  justifyContent: 'center',
+})
+
+export const AboutContentWrapper = styled('section', {
+  width: '100%',
+
   margin: '10rem 0',
 
   display: 'flex',
@@ -49,11 +61,33 @@ export const AboutContent = styled('div', {
 
   p: {
     maxWidth: 500,
+    backdropFilter: 'blur(4px)',
   },
 
   '@bp1': {
     p: {
       maxWidth: '100%',
     },
+  },
+})
+
+export const AboutImageBgWrapper = styled('div', {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+
+  position: 'absolute',
+
+  right: -455,
+  top: '50%',
+  transform: 'translateY(-50%)',
+
+  zIndex: -1,
+
+  img: {
+    width: '100%',
+    height: '100%',
+    objectFit: 'cover',
+    objectPosition: 'center',
   },
 })

@@ -7,4 +7,6 @@ export const Wrapper = styled('div', {
 
   display: 'flex',
   flexDirection: 'column',
+
+  position: 'relative',
 })

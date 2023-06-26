@@ -1,14 +1,22 @@
 import Image from 'next/image'
-import { About as AboutImage } from '~/assets'
+import { AboutBg, About as AboutImage } from '~/assets'
 import { Container } from '~/components/Container'
 import { Text } from '~/components/Text'
 import { SectionHeading } from '../SectionHeading'
-import { AboutContent, AboutImageWrapper, AboutWrapper } from './styles'
+import {
+  AboutContent,
+  AboutContentWrapper,
+  AboutImageBgWrapper,
+  AboutImageWrapper,
+} from './styles'
 
 export function About() {
   return (
     <Container>
-      <AboutWrapper>
+      <AboutImageBgWrapper>
+        <Image src={AboutBg} alt="" />
+      </AboutImageBgWrapper>
+      <AboutContentWrapper>
         <AboutImageWrapper>
           <Image src={AboutImage} alt="" />
         </AboutImageWrapper>
@@ -29,7 +37,7 @@ export function About() {
             fusce. Aliquam turpis fames quisque egestas ut sed in odio nulla.
           </Text>
         </AboutContent>
-      </AboutWrapper>
+      </AboutContentWrapper>
     </Container>
   )
 }
