@@ -51,7 +51,7 @@ export function Hero() {
         </HeroImageWrapper>
       </HeroWrapper>
 
-      <Container>
+      <Container as="section">
         <Notice>
           <Text weight="medium" size="md">
             Trabalhamos exclusivamente com atendimento particular, não atendemos

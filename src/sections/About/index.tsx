@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import { AboutBg, About as AboutImage } from '~/assets'
 import { Container } from '~/components/Container'
+import { SectionHeading } from '~/components/SectionHeading'
 import { Text } from '~/components/Text'
-import { SectionHeading } from '../SectionHeading'
 import {
   AboutContent,
   AboutContentWrapper,

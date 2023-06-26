@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import { Container } from '~/components/Container'
 import { Heading } from '~/components/Heading'
+import { SectionHeading } from '~/components/SectionHeading'
 import { Text } from '~/components/Text'
-import { SectionHeading } from '../SectionHeading'
 import { services } from './services'
 import {
   ServiceCard,
