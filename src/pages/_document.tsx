@@ -1,4 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
+import { Favicon } from '~/components/Head/Favicon'
+import { SEO } from '~/components/Head/SEO'
 import { getCssText } from '~/styles/stitches.config'
 
 export default class MyDocument extends Document {
@@ -6,8 +8,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
@@ -23,6 +23,14 @@ export default class MyDocument extends Document {
           <style
             id="stitches"
             dangerouslySetInnerHTML={{ __html: getCssText() }}
+          />
+
+          <Favicon />
+
+          <SEO
+            title="Dra. Naiara Galvão - Obstetrícia e Ginecologia"
+            description='Saúde da mulher, prevenção e acompanhamento em todas as fases da sua vida, da adolescência à menopausa, da pré-concepção ao pós-parto, sem julgamentos ou "PRÉconceitos".'
+            url={process.env.NEXT_PUBLIC_URL ?? ''}
           />
         </Head>
         <body>
