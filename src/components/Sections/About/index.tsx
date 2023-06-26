@@ -12,10 +12,11 @@ import {
 
 export function About() {
   return (
-    <Container>
+    <Container as="section">
       <AboutImageBgWrapper>
         <Image src={AboutBg} alt="" />
       </AboutImageBgWrapper>
+
       <AboutContentWrapper>
         <AboutImageWrapper>
           <Image src={AboutImage} alt="" />
@@ -25,16 +26,11 @@ export function About() {
           <SectionHeading title="Sobre" />
 
           <Text size="lg" weight="medium">
-            Lorem ipsum dolor sit amet consectetur. In enim rutrum volutpat vel
-            elementum risus quis. Velit molestie turpis sit ut sapien phasellus
-            massa tellus euismod. Magna id a amet id volutpat suspendisse cum
-            vestibulum scelerisque. Amet leo nisl nec urna quam. Tellus commodo
-            auctor tellus pharetra ut augue dictumst pellentesque rhoncus.
-            Imperdiet sit pulvinar euismod diam semper venenatis dictum. Aliquet
-            eu pellentesque auctor pharetra a elementum vitae turpis vitae. Nisl
-            curabitur odio tincidunt elementum orci id purus faucibus risus.
-            Donec vitae rhoncus pretium pellentesque euismod interdum cursus sit
-            fusce. Aliquam turpis fames quisque egestas ut sed in odio nulla.
+            Olá, sou mãe do Gabriel, nascido em 2022, tutora de quatro gatinhos
+            adotados, médica formada pela Universidade de Brasília, com
+            residência médica em Ginecologia e Obstetrícia no Hospital
+            Universitário de Brasília. Sou pos-graduada em Ultrassonografia em
+            Ginecologia e Obstetricia e em Medicina Fetal pela NEXUS.
           </Text>
         </AboutContent>
       </AboutContentWrapper>

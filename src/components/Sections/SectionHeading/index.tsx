@@ -5,5 +5,9 @@ interface SectionHeadingProps {
 }
 
 export function SectionHeading({ title }: SectionHeadingProps) {
-  return <StyledHeading size="xl">{title}</StyledHeading>
+  return (
+    <StyledHeading size="xl" as="h1">
+      {title}
+    </StyledHeading>
+  )
 }

@@ -16,7 +16,7 @@ export const NavbarWrapper = styled('header', {
   background: 'rgba(150, 63, 51, 0.8)',
   backdropFilter: 'blur(3px)',
 
-  transition: 'all 1s ease-in-out',
+  transition: 'all 0.5s ease-in-out',
 
   variants: {
     isScrolled: {
@@ -74,20 +74,21 @@ export const NavbarRight = styled('nav', {
     textDecoration: 'none',
     fontSize: '$md',
     fontWeight: '$medium',
-    borderBottom: '2px solid transparent',
+    borderBottom: '3px solid transparent',
     padding: '0.75rem 0',
 
     '&:hover': {
       '&::after': {
-        content: '',
+        content: '""',
         width: '100%',
+        position: 'absolute',
       },
     },
 
     '&::after': {
-      content: '',
+      content: '""',
       width: 0,
-      height: 2,
+      height: 3,
       backgroundColor: '$highlight',
       position: 'absolute',
       bottom: 0,

@@ -17,17 +17,18 @@ export function Hero() {
       <HeroWrapper id="inicio">
         <HeroContent>
           <Text size="md" weight="medium" as="h2">
-            Lorem ipsum dolor sit amet consectetur
+            Obstetrícia e Ginecologia
           </Text>
 
           <Heading size="xl" as="h1" weight="regular">
-            LOREM ipsum dolor sit amet consectetur.
+            SaÚde da mulher, prevenção e acompanhamento em todas as fases da sua
+            vida.
           </Heading>
 
           <Text size="lg" weight="medium">
-            Lorem ipsum dolor sit amet consectetur. Egestas fringilla vel amet
-            tellus feugiat sagittis arcu. Fringilla rhoncus orci nulla massa
-            cras varius feugiat viverra.
+            Venha cuidar de e acompanhar todas as suas fases, da adolescência à
+            menopausa, da pré-concepção ao pós-parto, sem julgamentos ou
+            “PRÉconceitos”.
           </Text>
 
           <ButtonLink
