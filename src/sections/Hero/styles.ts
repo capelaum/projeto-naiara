@@ -51,7 +51,7 @@ export const HeroContent = styled('div', {
   zIndex: 3,
 
   h1: {
-    maxWidth: '60%',
+    maxWidth: '50%',
     width: '100%',
     margin: '1rem 0 1.5rem 0',
     lineHeight: '$short',
@@ -81,7 +81,7 @@ export const HeroContent = styled('div', {
 
   '@bp2': {
     h1: {
-      fontSize: '$4xl',
+      fontSize: '$3xl',
     },
 
     p: {
@@ -91,7 +91,7 @@ export const HeroContent = styled('div', {
 
   '@bp3': {
     h1: {
-      fontSize: '$3xl',
+      fontSize: '$2xl',
       maxWidth: '100%',
     },
   },

@@ -20,7 +20,7 @@ export function Hero() {
             Obstetrícia e Ginecologia
           </Text>
 
-          <Heading size="xl" as="h1" weight="regular">
+          <Heading size="lg" as="h1" weight="regular">
             Saúde da mulher, prevenção e acompanhamento em todas as fases da sua
             vida
           </Heading>

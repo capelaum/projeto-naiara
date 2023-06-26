@@ -26,7 +26,7 @@ export const ServicesCardsWrapper = styled('div', {
   position: 'relative',
 
   paddingTop: '2rem',
-  paddingBottom: '5rem',
+  paddingBottom: '8rem',
   marginBottom: '20rem',
 
   backgroundImage: `url(${(ServicesBg as StaticImageData).src})`,
@@ -42,15 +42,15 @@ export const ServicesCardsWrapper = styled('div', {
     inset: 0,
 
     background:
-      'linear-gradient(to bottom, rgba(251, 251, 251, 0.8) 0%, rgba(221, 196, 182, 0.5) 10%, rgba(221, 196, 182, 0.75) 50%, rgba(221, 196, 182, 0.9) 95%)',
+      'linear-gradient(to bottom, rgba(251, 251, 251, 0.8) 0%, rgba(221, 196, 182, 0.5) 10%, rgba(221, 196, 182, 0.75) 50%, rgba(221, 196, 182, 0.9) 95%, $secondary 100%)',
   },
 
   '&::after': {
     content: '""',
     position: 'absolute',
     width: '100%',
-    height: 400,
-    bottom: -200,
+    height: 500,
+    bottom: -250,
     right: 0,
     left: 0,
 
@@ -62,6 +62,12 @@ export const ServicesCardsWrapper = styled('div', {
 
   '@bp1': {
     backgroundSize: 'auto',
+    paddingBottom: '4rem',
+
+    '&::after': {
+      height: 300,
+      bottom: -150,
+    },
   },
 })
 
