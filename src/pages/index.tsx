@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { Navbar } from '~/components/Navbar'
+import { About } from '~/components/Sections/About/inde'
 import { Hero } from '~/components/Sections/Hero'
 import { HomeMain } from '~/styles/home'
 
@@ -14,6 +15,7 @@ export default function Home() {
 
       <HomeMain>
         <Hero />
+        <About />
       </HomeMain>
     </>
   )

@@ -152,7 +152,7 @@ export const Notice = styled('article', {
   justifyContent: 'center',
 
   padding: '1.25rem',
-  margin: '8rem 0',
+  margin: '8rem 0 0 0',
 
   width: '100%',
 
@@ -166,12 +166,11 @@ export const Notice = styled('article', {
 
   [`& ${Text}`]: {
     lineHeight: '$short',
-    textAlign: 'justify',
   },
 
   '@bp1': {
     [`& ${Text}`]: {
-      fontSize: '$sm',
+      // fontSize: '$sm',
     },
   },
 })

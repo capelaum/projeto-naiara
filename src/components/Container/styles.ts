@@ -7,5 +7,4 @@ export const Wrapper = styled('div', {
 
   display: 'flex',
   flexDirection: 'column',
-  // border: '1px solid red',
 })
