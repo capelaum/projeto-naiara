@@ -4,7 +4,7 @@ import { Hero as HeroImage } from '~/assets'
 import { ButtonLink } from '~/components/Button/ButtonLink'
 import { Heading } from '~/components/Heading'
 import { Text } from '~/components/Text'
-import { HeroHeadingWrapper, HeroImageWrapper, HeroWrapper } from './styles'
+import { HeroContent, HeroImageWrapper, HeroWrapper } from './styles'
 
 export function Hero() {
   const message = encodeURIComponent(
@@ -13,7 +13,7 @@ export function Hero() {
 
   return (
     <HeroWrapper id="inicio">
-      <HeroHeadingWrapper>
+      <HeroContent>
         <Text size="md" weight="medium" as="h2">
           Lorem ipsum dolor sit amet consectetur
         </Text>
@@ -37,7 +37,7 @@ export function Hero() {
           <RiWhatsappFill size={28} />
           Agendar Consulta
         </ButtonLink>
-      </HeroHeadingWrapper>
+      </HeroContent>
 
       <HeroImageWrapper>
         <Image
