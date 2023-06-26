@@ -1,17 +1,12 @@
 import Image from 'next/image'
-import { RiWhatsappFill } from 'react-icons/ri'
 import { Hero as HeroImage } from '~/assets'
-import { ButtonLink } from '~/components/Button/ButtonLink'
+import { ContactButton } from '~/components/ContactButton'
 import { Container } from '~/components/Container'
 import { Heading } from '~/components/Heading'
 import { Text } from '~/components/Text'
 import { HeroContent, HeroImageWrapper, HeroWrapper, Notice } from './styles'
 
 export function Hero() {
-  const message = encodeURIComponent(
-    'Olá Dra. Naiara, gostaria de saber mais sobre seus serviços.',
-  )
-
   return (
     <>
       <HeroWrapper id="inicio">
@@ -31,15 +26,7 @@ export function Hero() {
             “PRÉconceitos”.
           </Text>
 
-          <ButtonLink
-            size="xl"
-            href={`https://wa.me/5561992561470?text=${message}`}
-            title="Agendar consulta!"
-            target="_blank"
-          >
-            <RiWhatsappFill size={28} />
-            Agendar Consulta
-          </ButtonLink>
+          <ContactButton />
         </HeroContent>
 
         <HeroImageWrapper>
