@@ -1,7 +1,6 @@
 import { styled } from '~/styles/stitches.config'
 
 export const NavbarWrapper = styled('header', {
-  display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
   padding: '1rem 1.5rem',
@@ -15,6 +14,19 @@ export const NavbarWrapper = styled('header', {
 
   background: 'rgba(150, 63, 51, 0.8)',
   backdropFilter: 'blur(3px)',
+
+  transition: '$slow',
+
+  variants: {
+    isScrolled: {
+      true: {
+        top: 0,
+      },
+      false: {
+        top: '-100%',
+      },
+    },
+  },
 })
 
 export const NavbarContainer = styled('div', {

@@ -1,3 +1,4 @@
+import { Text } from '~/components/Text'
 import { styled } from '~/styles/stitches.config'
 
 export const HeroWrapper = styled('section', {
@@ -6,7 +7,7 @@ export const HeroWrapper = styled('section', {
 
   position: 'relative',
 
-  padding: '15rem 0 10rem 0',
+  padding: '10rem 0',
 
   display: 'flex',
   justifyContent: 'center',
@@ -30,7 +31,7 @@ export const HeroWrapper = styled('section', {
     minHeight: '100%',
     height: 'auto',
     flexDirection: 'column',
-    padding: '12.5rem 0 0 0',
+    padding: '5rem 0 0 0',
   },
 })
 
@@ -95,7 +96,8 @@ export const HeroImageWrapper = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
   width: '50%',
-  marginTop: 97,
+  height: '100%',
+  // marginTop: 97,
 
   position: 'absolute',
   top: 0,
@@ -140,6 +142,36 @@ export const HeroImageWrapper = styled('div', {
       right: 0,
       background: `linear-gradient(to bottom, $secondary 0%, rgba(221, 196, 182, 0.5) 10%, transparent 20%, transparent 100%),
         linear-gradient(to top, $secondary 0%, rgba(221, 196, 182, 0.5) 10%, transparent 20%, transparent 100%)`,
+    },
+  },
+})
+
+export const Notice = styled('article', {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+
+  padding: '1.25rem',
+  margin: '8rem 0',
+
+  width: '100%',
+
+  borderRadius: '$lg',
+
+  backgroundColor: '$white',
+
+  zIndex: 3,
+
+  boxShadow: '$default',
+
+  [`& ${Text}`]: {
+    lineHeight: '$short',
+    textAlign: 'justify',
+  },
+
+  '@bp1': {
+    [`& ${Text}`]: {
+      fontSize: '$sm',
     },
   },
 })

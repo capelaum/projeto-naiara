@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import { MdEmail } from 'react-icons/md'
 import { RiInstagramFill, RiWhatsappFill } from 'react-icons/ri'
 import { LogoWhite } from '~/assets'
@@ -12,12 +13,22 @@ import {
 } from './styles'
 
 export function Navbar() {
+  const [offsetY, setOffsetY] = useState(0)
+
+  const handleScroll = () => setOffsetY(window.pageYOffset)
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   const message = encodeURIComponent(
     'Olá Dra. Naiara, gostaria de saber mais sobre seus serviços.',
   )
 
   return (
-    <NavbarWrapper>
+    <NavbarWrapper isScrolled={offsetY > 0}>
       <NavbarContainer>
         <NavbarLeft>
           <Link href="#inicio" title="Início">

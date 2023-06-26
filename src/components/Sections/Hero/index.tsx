@@ -2,9 +2,10 @@ import Image from 'next/image'
 import { RiWhatsappFill } from 'react-icons/ri'
 import { Hero as HeroImage } from '~/assets'
 import { ButtonLink } from '~/components/Button/ButtonLink'
+import { Container } from '~/components/Container'
 import { Heading } from '~/components/Heading'
 import { Text } from '~/components/Text'
-import { HeroContent, HeroImageWrapper, HeroWrapper } from './styles'
+import { HeroContent, HeroImageWrapper, HeroWrapper, Notice } from './styles'
 
 export function Hero() {
   const message = encodeURIComponent(
@@ -12,40 +13,55 @@ export function Hero() {
   )
 
   return (
-    <HeroWrapper id="inicio">
-      <HeroContent>
-        <Text size="md" weight="medium" as="h2">
-          Lorem ipsum dolor sit amet consectetur
-        </Text>
+    <>
+      <HeroWrapper id="inicio">
+        <HeroContent>
+          <Text size="md" weight="medium" as="h2">
+            Lorem ipsum dolor sit amet consectetur
+          </Text>
 
-        <Heading size="xl" as="h1" weight="regular">
-          LOREM ipsum dolor sit amet consectetur.
-        </Heading>
+          <Heading size="xl" as="h1" weight="regular">
+            LOREM ipsum dolor sit amet consectetur.
+          </Heading>
 
-        <Text size="lg" weight="medium">
-          Lorem ipsum dolor sit amet consectetur. Egestas fringilla vel amet
-          tellus feugiat sagittis arcu. Fringilla rhoncus orci nulla massa cras
-          varius feugiat viverra.
-        </Text>
+          <Text size="lg" weight="medium">
+            Lorem ipsum dolor sit amet consectetur. Egestas fringilla vel amet
+            tellus feugiat sagittis arcu. Fringilla rhoncus orci nulla massa
+            cras varius feugiat viverra.
+          </Text>
 
-        <ButtonLink
-          size="xl"
-          href={`https://wa.me/5561992561470?text=${message}`}
-          title="Agendar consulta!"
-          target="_blank"
-        >
-          <RiWhatsappFill size={28} />
-          Agendar Consulta
-        </ButtonLink>
-      </HeroContent>
+          <ButtonLink
+            size="xl"
+            href={`https://wa.me/5561992561470?text=${message}`}
+            title="Agendar consulta!"
+            target="_blank"
+          >
+            <RiWhatsappFill size={28} />
+            Agendar Consulta
+          </ButtonLink>
+        </HeroContent>
 
-      <HeroImageWrapper>
-        <Image
-          priority
-          src={HeroImage}
-          alt="Foto profissional da Dra. Naiara galvão, sentada de frente para uma mesa, com os braços cruzados e com um computador branco a sua frente, exibindo um largo sorriso caloroso."
-        />
-      </HeroImageWrapper>
-    </HeroWrapper>
+        <HeroImageWrapper>
+          <Image
+            priority
+            src={HeroImage}
+            alt="Foto profissional da Dra. Naiara galvão, sentada de frente para uma mesa, com os braços cruzados e com um computador branco a sua frente, exibindo um largo sorriso caloroso."
+          />
+        </HeroImageWrapper>
+      </HeroWrapper>
+
+      <Container>
+        <Notice>
+          <Text weight="medium" size="md">
+            Trabalhamos exclusivamente com atendimento particular, não atendemos
+            convênios ou planos de saúde. No entanto, fique tranquilo(a), se
+            você possui algum convênio ou plano de saúde, você pode agendar sua
+            consulta na modalidade particular. Nós iremos fornecer orientações e
+            assistência para que você possa solicitar o reembolso junto ao seu
+            convênio e também aproveitar possíveis deduções no Imposto de Renda.
+          </Text>
+        </Notice>
+      </Container>
+    </>
   )
 }
