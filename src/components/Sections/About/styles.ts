@@ -10,9 +10,11 @@ export const AboutContentWrapper = styled('div', {
   alignItems: 'center',
   gap: '6rem',
 
-  // border: '1px solid red',
-
   '@bp1': {
+    gap: '3rem',
+  },
+
+  '@bp3': {
     flexDirection: 'column-reverse',
     margin: '5rem 0',
   },
@@ -35,7 +37,7 @@ export const AboutImageWrapper = styled('div', {
     border: '1px solid $primary',
   },
 
-  '@bp1': {
+  '@bp3': {
     maxWidth: '100%',
   },
 })
@@ -46,13 +48,16 @@ export const AboutContent = styled('div', {
   alignItems: 'flex-start',
   justifyContent: 'flex-start',
   gap: '4rem',
+  width: '100%',
 
   p: {
     maxWidth: 500,
     backdropFilter: 'blur(3px)',
   },
 
-  '@bp1': {
+  '@bp2': {
+    gap: '3rem',
+
     p: {
       maxWidth: '100%',
     },

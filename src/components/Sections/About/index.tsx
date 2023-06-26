@@ -29,8 +29,10 @@ export function About() {
             Olá, sou mãe do Gabriel, nascido em 2022, tutora de quatro gatinhos
             adotados, médica formada pela Universidade de Brasília, com
             residência médica em Ginecologia e Obstetrícia no Hospital
-            Universitário de Brasília. Sou pos-graduada em Ultrassonografia em
-            Ginecologia e Obstetricia e em Medicina Fetal pela NEXUS.
+            Universitário de Brasília.
+            <br /> <br />
+            Sou pos-graduada em Ultrassonografia em Ginecologia e Obstetricia e
+            em Medicina Fetal pela NEXUS.
           </Text>
         </AboutContent>
       </AboutContentWrapper>

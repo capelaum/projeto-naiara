@@ -21,8 +21,8 @@ export function Hero() {
           </Text>
 
           <Heading size="xl" as="h1" weight="regular">
-            SaÚde da mulher, prevenção e acompanhamento em todas as fases da sua
-            vida.
+            Saúde da mulher, prevenção e acompanhamento em todas as fases da sua
+            vida
           </Heading>
 
           <Text size="lg" weight="medium">

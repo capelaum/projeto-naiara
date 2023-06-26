@@ -7,5 +7,9 @@ interface ContainerProps {
 }
 
 export function Container({ children, as }: ContainerProps) {
-  return <Wrapper as={as}>{children}</Wrapper>
+  return (
+    <Wrapper as={as} className="container">
+      {children}
+    </Wrapper>
+  )
 }
