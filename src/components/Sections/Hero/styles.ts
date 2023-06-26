@@ -1,11 +1,9 @@
 import { styled } from '~/styles/stitches.config'
 
 export const HeroWrapper = styled('section', {
-  // minHeight: '100vh',
   height: '100%',
   width: '100%',
 
-  // overflow: 'hidden',
   position: 'relative',
 
   padding: '15rem 0 10rem 0',
@@ -15,11 +13,7 @@ export const HeroWrapper = styled('section', {
 
   backgroundColor: '$secondary',
 
-  // border: '1px solid red', rgba(221, 196, 182, 0.15)
-
   '&::after': {
-    // border: '1px solid red',
-
     content: '""',
     position: 'absolute',
     width: '100%',
@@ -37,10 +31,6 @@ export const HeroWrapper = styled('section', {
     height: 'auto',
     flexDirection: 'column',
     padding: '12.5rem 0 0 0',
-
-    '&::after': {
-      // display: 'none',
-    },
   },
 })
 
@@ -56,8 +46,6 @@ export const HeroContent = styled('div', {
   width: '100%',
   maxWidth: '1200px',
   margin: '0 1.5rem',
-
-  // border: '1px solid red',
 
   zIndex: 3,
 
@@ -107,9 +95,7 @@ export const HeroImageWrapper = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
   width: '50%',
-  marginTop: '6.125rem',
-
-  // border: '1px solid red',
+  marginTop: 97,
 
   position: 'absolute',
   top: 0,
@@ -122,7 +108,7 @@ export const HeroImageWrapper = styled('div', {
     width: '100%',
     height: '100%',
     objectFit: 'cover',
-    objectPosition: 'center',
+    objectPosition: 'right',
   },
 
   '&::after': {
@@ -134,7 +120,7 @@ export const HeroImageWrapper = styled('div', {
     top: 0,
     right: 0,
     background: `linear-gradient(to right, $secondary 0%, rgba(221, 196, 182, 0.5) 25%, transparent 50%, transparent 100%),
-      linear-gradient(to top, $secondary 0%, rgba(221, 196, 182, 0.5) 15%, transparent 20%, transparent 100%)`,
+      linear-gradient(to top, $secondary 0%, rgba(221, 196, 182, 0.5) 10%, transparent 15%, transparent 100%)`,
   },
 
   '@bp1': {
