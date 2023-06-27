@@ -60,12 +60,6 @@ export const AppointmentContent = styled('div', {
   '@bp2': {
     maxWidth: '100%',
   },
-
-  '@bp3': {
-    [`& ${Heading}`]: {
-      fontSize: '$2xl',
-    },
-  },
 })
 
 export const AppointmentText = styled('div', {
@@ -86,7 +80,7 @@ export const AppointmentSliderContainer = styled(motion.div, {
   overflow: 'hidden',
 
   borderRadius: '$lg',
-  border: '3px solid $primary',
+  border: '2px solid $primary',
 
   transition: '$slow',
 
