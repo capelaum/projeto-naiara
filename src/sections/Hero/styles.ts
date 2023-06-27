@@ -173,10 +173,4 @@ export const Notice = styled('article', {
   [`& ${Text}`]: {
     lineHeight: '$short',
   },
-
-  '@bp1': {
-    [`& ${Text}`]: {
-      // fontSize: '$sm',
-    },
-  },
 })

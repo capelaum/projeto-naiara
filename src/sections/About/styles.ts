@@ -3,7 +3,7 @@ import { styled } from '~/styles/stitches.config'
 export const AboutContentWrapper = styled('div', {
   width: '100%',
 
-  margin: '10rem 0',
+  margin: '6rem 0 8rem 0',
 
   display: 'flex',
   justifyContent: 'center',

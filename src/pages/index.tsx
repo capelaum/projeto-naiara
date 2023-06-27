@@ -4,6 +4,7 @@ import { Navbar } from '~/components/Navbar'
 import { About } from '~/sections/About'
 import { Appointment } from '~/sections/Appointment'
 import { Hero } from '~/sections/Hero'
+import { Instagram } from '~/sections/Instagram'
 import { Services } from '~/sections/Services'
 import { Testimonials } from '~/sections/Testimonials'
 import { HomeMain } from '~/styles/home'
@@ -23,6 +24,7 @@ export default function Home() {
         <Services />
         <Appointment />
         <Testimonials />
+        <Instagram />
       </HomeMain>
     </>
   )

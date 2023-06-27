@@ -8,6 +8,7 @@ import FetalMedicine from '~/assets/images/icons/medicina-fetal.png'
 import Childbirth from '~/assets/images/icons/parto.png'
 import Prenatal from '~/assets/images/icons/pre-natal.png'
 import Ultrasound from '~/assets/images/icons/ultrassonografia.png'
+import InstaProfile from '~/assets/images/insta-profile.svg'
 import LogoWhite from '~/assets/images/logo-white.png'
 import ServicesBg from '~/assets/images/services-bg.svg'
 
@@ -20,4 +21,13 @@ const icons = {
   Prenatal,
 }
 
-export { About, AboutBg, BgPatternRed, Hero, LogoWhite, ServicesBg, icons }
+export {
+  About,
+  AboutBg,
+  BgPatternRed,
+  Hero,
+  InstaProfile,
+  LogoWhite,
+  ServicesBg,
+  icons,
+}
