@@ -14,7 +14,11 @@ export function About() {
   return (
     <Container as="section">
       <AboutImageBgWrapper>
-        <Image src={AboutBg} alt="" />
+        <Image
+          src={AboutBg}
+          alt="Vetor do logotipo da Dra. Naiara Galvão, com um formato de flor, em baixa opacidade."
+          blurDataURL={AboutBg.blurDataURL}
+        />
       </AboutImageBgWrapper>
 
       <AboutContentWrapper>

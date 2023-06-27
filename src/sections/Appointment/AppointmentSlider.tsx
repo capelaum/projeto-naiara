@@ -75,7 +75,7 @@ export function AppointmentSlider() {
             src={src}
             alt={alt}
             className="keen-slider__slide"
-            blurDataURL={src.src}
+            blurDataURL={src.blurDataURL}
           />
         ))}
       </AppointmentSliderContainer>

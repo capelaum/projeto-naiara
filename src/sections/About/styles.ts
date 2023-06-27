@@ -51,7 +51,7 @@ export const AboutContent = styled('div', {
   width: '100%',
 
   p: {
-    maxWidth: 500,
+    maxWidth: 600,
     backdropFilter: 'blur(3px)',
   },
 
