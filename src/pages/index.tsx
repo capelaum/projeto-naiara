@@ -5,6 +5,7 @@ import { About } from '~/sections/About'
 import { Appointment } from '~/sections/Appointment'
 import { Hero } from '~/sections/Hero'
 import { Services } from '~/sections/Services'
+import { Testimonials } from '~/sections/Testimonials'
 import { HomeMain } from '~/styles/home'
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
         <About />
         <Services />
         <Appointment />
+        <Testimonials />
       </HomeMain>
     </>
   )

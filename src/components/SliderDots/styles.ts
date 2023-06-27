@@ -13,7 +13,6 @@ export const SliderDotButton = styled('button', {
   minHeight: 12,
 
   borderRadius: '$full',
-  backgroundColor: '$gray300',
 
   transition: '$default',
 
@@ -23,5 +22,35 @@ export const SliderDotButton = styled('button', {
         backgroundColor: '$primary',
       },
     },
+
+    variant: {
+      red: {
+        backgroundColor: 'transparent',
+        border: '1px solid $white',
+      },
+
+      white: {
+        backgroundColor: '$gray300',
+      },
+    },
   },
+
+  compoundVariants: [
+    {
+      active: true,
+      variant: 'white',
+
+      css: {
+        backgroundColor: '$primary',
+      },
+    },
+    {
+      active: true,
+      variant: 'red',
+
+      css: {
+        backgroundColor: '$white',
+      },
+    },
+  ],
 })

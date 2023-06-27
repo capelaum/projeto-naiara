@@ -9,17 +9,25 @@ interface SliderDotsProps {
     {},
     KeenSliderHooks
   > | null>
+  buttonTitle: string
+  variant?: 'red' | 'white'
 }
 
-export function SliderDots({ currentSlide, instanceRef }: SliderDotsProps) {
+export function SliderDots({
+  currentSlide,
+  instanceRef,
+  buttonTitle,
+  variant = 'white',
+}: SliderDotsProps) {
   return (
     <SliderDotsWrapper className="slider-dots">
       {[...Array(instanceRef?.current?.track.details.slides.length).keys()].map(
         (idx) => (
           <SliderDotButton
+            variant={variant}
             active={currentSlide === idx}
             key={idx}
-            title={`Ir para depoimento ${idx + 1}`}
+            title={`${buttonTitle} ${idx + 1}`}
             onClick={() => {
               instanceRef.current?.moveToIdx(idx)
             }}

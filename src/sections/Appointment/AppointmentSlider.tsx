@@ -81,7 +81,11 @@ export function AppointmentSlider() {
       </AppointmentSliderContainer>
 
       {loaded && instanceRef.current && (
-        <SliderDots instanceRef={instanceRef} currentSlide={currentSlide} />
+        <SliderDots
+          buttonTitle="Ir para imagem"
+          instanceRef={instanceRef}
+          currentSlide={currentSlide}
+        />
       )}
     </>
   )

@@ -14,7 +14,7 @@ export const AppointmentWrapper = styled('div', {
   justifyContent: 'space-between',
   alignItems: 'center',
 
-  marginBottom: '5rem',
+  marginBottom: '8rem',
   gap: '7.5rem',
 
   '@bp1': {
