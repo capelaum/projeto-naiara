@@ -7,7 +7,7 @@ import Gallery5 from '~/assets/images/gallery/gallery-5.jpg'
 import Gallery6 from '~/assets/images/gallery/gallery-6.jpg'
 import Gallery7 from '~/assets/images/gallery/gallery-7.jpg'
 
-type GalleryItem = {
+export type GalleryItem = {
   id: number
   src: StaticImageData
   alt: string

@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { Heading } from '~/components/Heading'
 import { SliderDots } from '~/components/SliderDots'
-import { styled } from '~/styles/stitches.config'
+import { keyframes, styled } from '~/styles/stitches.config'
 
 SliderDots.toString = () => '.slider-dots'
 
@@ -12,7 +12,7 @@ export const AppointmentWrapper = styled('div', {
 
   display: 'flex',
   justifyContent: 'space-between',
-  alignItems: 'center',
+  alignItems: 'flex-start',
 
   marginBottom: '8rem',
   gap: '7.5rem',
@@ -72,30 +72,99 @@ export const AppointmentText = styled('div', {
   marginBottom: '2.5rem',
 })
 
-export const AppointmentSliderContainer = styled(motion.div, {
-  cursor: 'grab',
-  position: 'relative',
+export const AppointmentGalleryWrapper = styled(motion.div, {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
 
-  height: '100%',
-  maxHeight: 700,
-  overflow: 'hidden',
-
-  borderRadius: '$lg',
-  border: '2px solid $primary',
-
-  transition: '$slow',
+  width: '100%',
+  maxWidth: '50%',
 
   '@bp2': {
     maxWidth: '100%',
   },
 })
 
+export const AppointmentGalleryContainer = styled(motion.div, {
+  width: '100%',
+  height: 'auto',
+
+  transition: '$slow',
+
+  '@bp2': {
+    maxWidth: '100%',
+    height: 'auto',
+  },
+
+  // '@bp3': {
+  //   height: 600,
+  // },
+
+  // '@bp4': {
+  //   height: 500,
+  // },
+})
+
+export const fade = keyframes({
+  '0%': { opacity: 0 },
+  '100%': { opacity: 1 },
+})
+
 export const AppointmentImage = styled(Image, {
   width: '100%',
   height: '100%',
+  maxHeight: 700,
 
-  objectFit: 'cover ',
+  cursor: 'pointer',
+
+  borderRadius: '$lg',
+  border: '2px solid $primary',
+
+  objectFit: 'cover',
   objectPosition: 'center',
+
+  variants: {
+    active: {
+      true: {
+        animation: `${fade} 0.5s ease-in-out`,
+      },
+    },
+  },
+
+  '@bp3': {
+    maxHeight: 600,
+  },
+
+  '@bp4': {
+    maxHeight: 500,
+  },
 })
 
-export const AppointmentSliderDots = styled(SliderDots, {})
+export const AppointmentMapsButtonsContainer = styled('div', {
+  display: 'flex',
+  alignItems: 'center',
+  gap: '$2',
+
+  marginTop: '2rem',
+})
+
+export const AppointmentMapButton = styled('button', {
+  width: 12,
+  height: 12,
+  minWidth: 12,
+  minHeight: 12,
+
+  borderRadius: '$full',
+
+  transition: '$default',
+
+  backgroundColor: '$gray300',
+
+  variants: {
+    active: {
+      true: {
+        backgroundColor: '$primary',
+      },
+    },
+  },
+})

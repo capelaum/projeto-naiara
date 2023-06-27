@@ -37,30 +37,12 @@ export const TestimonialsWrapper = styled('section', {
 
 export const TestimonialsSliderContainer = styled(motion.div, {
   display: 'flex',
-  // alignItems: 'flex-start',
   cursor: 'grab',
   position: 'relative',
-  margin: '$12 $4 $8 $4',
-
-  // border: '1px solid white',
-
-  '&:after': {
-    content: '""',
-    position: 'absolute',
-    width: '100%',
-    height: '100%',
-    // background:
-    //   'linear-gradient(to right, $primary 0%, transparent 25%, transparent 70%, $primary 100%)',
-  },
-
-  '@bp1': {
-    '&:after': {
-      display: 'none',
-    },
-  },
+  margin: '$16 $4 $8 $4',
 })
 
-export const TestimonialCard = styled('div', {
+export const TestimonialCard = styled('article', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',

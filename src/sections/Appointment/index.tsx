@@ -2,7 +2,7 @@ import { ContactButton } from '~/components/ContactButton'
 import { Container } from '~/components/Container'
 import { Heading } from '~/components/Heading'
 import { Text } from '~/components/Text'
-import { AppointmentSlider } from './AppointmentSlider'
+import { AppointmentGallery } from './AppointmentSlider'
 import {
   AppointmentContent,
   AppointmentText,
@@ -41,7 +41,7 @@ export function Appointment() {
           <ContactButton />
         </AppointmentContent>
 
-        <AppointmentSlider />
+        <AppointmentGallery />
       </AppointmentWrapper>
     </Container>
   )
