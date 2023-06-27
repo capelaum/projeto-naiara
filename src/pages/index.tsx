@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Navbar } from '~/components/Navbar'
 import { About } from '~/sections/About'
 import { Appointment } from '~/sections/Appointment'
+import { Contact } from '~/sections/Contact'
 import { Hero } from '~/sections/Hero'
 import { Instagram } from '~/sections/Instagram'
 import { Services } from '~/sections/Services'
@@ -25,6 +26,7 @@ export default function Home() {
         <Appointment />
         <Testimonials />
         <Instagram />
+        <Contact />
       </HomeMain>
     </>
   )

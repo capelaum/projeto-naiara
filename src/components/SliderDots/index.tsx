@@ -21,19 +21,19 @@ export function SliderDots({
 }: SliderDotsProps) {
   return (
     <SliderDotsWrapper className="slider-dots">
-      {[...Array(instanceRef?.current?.track.details.slides.length).keys()].map(
-        (idx) => (
-          <SliderDotButton
-            variant={variant}
-            active={currentSlide === idx}
-            key={idx}
-            title={`${buttonTitle} ${idx + 1}`}
-            onClick={() => {
-              instanceRef.current?.moveToIdx(idx)
-            }}
-          />
-        ),
-      )}
+      {[
+        ...Array(instanceRef?.current?.track.details?.slides.length).keys(),
+      ].map((idx) => (
+        <SliderDotButton
+          variant={variant}
+          active={currentSlide === idx}
+          key={idx}
+          title={`${buttonTitle} ${idx + 1}`}
+          onClick={() => {
+            instanceRef.current?.moveToIdx(idx)
+          }}
+        />
+      ))}
     </SliderDotsWrapper>
   )
 }

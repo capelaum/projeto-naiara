@@ -57,7 +57,8 @@ export const NavBarSocial = styled('div', {
     transition: '$default',
 
     '&:hover': {
-      color: 'white',
+      color: '$highlight',
+      filter: 'brightness(1.2)',
     },
   },
 })
