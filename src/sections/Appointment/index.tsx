@@ -1,6 +1,6 @@
 import { ContactButton } from '~/components/ContactButton'
 import { Container } from '~/components/Container'
-import { SectionHeading } from '~/components/SectionHeading'
+import { Heading } from '~/components/Heading'
 import { Text } from '~/components/Text'
 import { AppointmentSlider } from './AppointmentSlider'
 import {
@@ -14,7 +14,9 @@ export function Appointment() {
     <Container as="section">
       <AppointmentWrapper>
         <AppointmentContent>
-          <SectionHeading title="Atendimento Humano, leveza, empatia." />
+          <Heading size="lg" as="h1">
+            Atendimento Humano, <br /> <span>leveza, empatia</span>
+          </Heading>
 
           <AppointmentText>
             <Text size="lg" weight="medium">

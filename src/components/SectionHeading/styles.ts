@@ -5,4 +5,5 @@ export const StyledHeading = styled(Heading, {
   borderBottom: '3px solid $highlight',
   paddingBottom: '0.5rem',
   textTransform: 'uppercase',
+  lineHeight: '$base',
 })

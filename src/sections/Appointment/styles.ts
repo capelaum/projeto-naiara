@@ -17,6 +17,10 @@ export const AppointmentWrapper = styled('div', {
   marginBottom: '5rem',
   gap: '7.5rem',
 
+  '@bp1': {
+    gap: '2.5rem',
+  },
+
   '@bp2': {
     flexDirection: 'column',
   },
@@ -43,10 +47,24 @@ export const AppointmentContent = styled('div', {
 
   [`& ${Heading}`]: {
     marginBottom: '4rem',
+    lineHeight: '$base',
+
+    textTransform: 'uppercase',
+
+    span: {
+      borderBottom: '3px solid $highlight',
+      paddingBottom: '0.5rem',
+    },
   },
 
   '@bp2': {
     maxWidth: '100%',
+  },
+
+  '@bp3': {
+    [`& ${Heading}`]: {
+      fontSize: '$2xl',
+    },
   },
 })
 
