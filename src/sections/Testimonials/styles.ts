@@ -40,7 +40,6 @@ export const TestimonialsSliderContainer = styled(motion.div, {
   cursor: 'grab',
   position: 'relative',
   margin: '$12 $4 $8 $4',
-  padding: '$4 0',
 
   // border: '1px solid white',
 

@@ -23,6 +23,7 @@ export const AppointmentWrapper = styled('div', {
 
   '@bp2': {
     flexDirection: 'column',
+    gap: '5rem',
   },
 
   [`& ${SliderDots}`]: {

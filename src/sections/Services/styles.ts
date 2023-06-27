@@ -62,6 +62,7 @@ export const ServicesCardsWrapper = styled('div', {
 
   '@bp1': {
     backgroundSize: 'auto',
+    marginBottom: '10rem',
 
     '&::after': {
       height: 300,
