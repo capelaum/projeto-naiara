@@ -26,8 +26,8 @@ export const ServicesCardsWrapper = styled('div', {
   position: 'relative',
 
   paddingTop: '2rem',
-  paddingBottom: '8rem',
-  marginBottom: '20rem',
+  paddingBottom: '5rem',
+  marginBottom: '15rem',
 
   backgroundImage: `url(${(ServicesBg as StaticImageData).src})`,
   backgroundPosition: 'top',
@@ -62,7 +62,6 @@ export const ServicesCardsWrapper = styled('div', {
 
   '@bp1': {
     backgroundSize: 'auto',
-    paddingBottom: '4rem',
 
     '&::after': {
       height: 300,

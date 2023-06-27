@@ -19,7 +19,10 @@ export function About() {
 
       <AboutContentWrapper>
         <AboutImageWrapper>
-          <Image src={AboutImage} alt="" />
+          <Image
+            src={AboutImage}
+            alt="Foto profissional da Dra. Naiara Galvão de pé em seu consultório, com um vestido florido branco com detalhes vermelhos, exibindo um largo e caloroso sorriso."
+          />
         </AboutImageWrapper>
 
         <AboutContent>

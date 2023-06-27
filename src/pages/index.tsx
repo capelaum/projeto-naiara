@@ -1,6 +1,8 @@
+import 'keen-slider/keen-slider.min.css'
 import Head from 'next/head'
 import { Navbar } from '~/components/Navbar'
 import { About } from '~/sections/About'
+import { Appointment } from '~/sections/Appointment'
 import { Hero } from '~/sections/Hero'
 import { Services } from '~/sections/Services'
 import { HomeMain } from '~/styles/home'
@@ -9,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Dra. Naiara Galvão - Ginecologista e Obstetrícia</title>
+        <title>Dra. Naiara Galvão - Obstetrícia e Ginecologia</title>
       </Head>
 
       <Navbar />
@@ -18,6 +20,7 @@ export default function Home() {
         <Hero />
         <About />
         <Services />
+        <Appointment />
       </HomeMain>
     </>
   )
