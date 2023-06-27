@@ -37,6 +37,7 @@ export const TestimonialsWrapper = styled('section', {
 
 export const TestimonialsSliderContainer = styled(motion.div, {
   display: 'flex',
+  // alignItems: 'flex-start',
   cursor: 'grab',
   position: 'relative',
   margin: '$12 $4 $8 $4',

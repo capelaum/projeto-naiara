@@ -13,7 +13,7 @@ export const ContactWrapper = styled('div', {
   alignItems: 'flex-start',
 
   marginBottom: '8rem',
-  gap: '2.5rem',
+  gap: '3rem',
 
   '@bp2': {
     flexDirection: 'column',

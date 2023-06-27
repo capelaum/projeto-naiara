@@ -121,7 +121,7 @@ export function Testimonials() {
 
             <TestimonialCardProfile>
               <FaUserCircle size={32} />
-              <Text size="lg" weight="medium">
+              <Text size="lg" weight="semibold">
                 {testimonial.name}
               </Text>
             </TestimonialCardProfile>
