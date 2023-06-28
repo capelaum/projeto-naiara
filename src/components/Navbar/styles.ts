@@ -26,7 +26,40 @@ export const NavbarWrapper = styled('header', {
         background: 'rgba(150, 63, 51, 0.85)',
       },
     },
+
+    isMobileMenuOpen: {
+      true: {
+        display: 'none',
+      },
+      false: {
+        display: 'flex',
+      },
+    },
   },
+
+  defaultVariants: {
+    isScrolled: false,
+    isMobileMenuOpen: false,
+  },
+
+  compoundVariants: [
+    {
+      isScrolled: true,
+      isMobileMenuOpen: true,
+
+      css: {
+        display: 'none',
+      },
+    },
+    {
+      isScrolled: false,
+      isMobileMenuOpen: true,
+
+      css: {
+        display: 'none',
+      },
+    },
+  ],
 })
 
 export const NavbarContainer = styled('div', {

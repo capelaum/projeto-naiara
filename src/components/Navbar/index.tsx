@@ -55,14 +55,17 @@ export function Navbar() {
 
   return (
     <>
-      <NavbarWrapper isScrolled={offsetY > 0}>
+      <NavbarWrapper
+        isScrolled={offsetY > 0}
+        isMobileMenuOpen={isMobileMenuOpen}
+      >
         <NavbarContainer>
           <NavbarLeft>
             <ScrollLink
               variant="none"
               href="#inicio"
               title="Início"
-              scroll={false}
+              onClick={handleCloseMobileMenu}
             >
               <Image
                 src={LogoWhite}
@@ -121,13 +124,18 @@ export function Navbar() {
       </NavbarWrapper>
 
       <MobileMenu isOpen={isMobileMenuOpen}>
-        <MobileMenuNav isOpen={isMobileMenuOpen} onClick={() => {}}>
+        <MobileMenuNav isOpen={isMobileMenuOpen}>
           <MobileMenuNavHeader>
-            <ScrollLink variant="none" href="#inicio" title="Início">
+            <ScrollLink
+              variant="none"
+              href="#inicio"
+              title="Início"
+              onClick={handleCloseMobileMenu}
+            >
               <Image
                 src={LogoWhite}
                 alt="Logotipo da Dra. Naiara Galvão, tendo escrito abaixo o seu nome, suas especialidades: Ginecologia e Obstetrícia, e seu CRM DF/20851 | RQE 17851"
-                width={120}
+                width={96}
               />
             </ScrollLink>
 
