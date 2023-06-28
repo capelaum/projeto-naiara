@@ -103,6 +103,6 @@ export const ServiceCard = styled(motion.article, {
   },
 
   p: {
-    textAlign: 'justify',
+    textAlign: 'left',
   },
 })
