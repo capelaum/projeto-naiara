@@ -12,7 +12,7 @@ export const ContactWrapper = styled('div', {
   justifyContent: 'space-between',
   alignItems: 'flex-start',
 
-  marginBottom: '8rem',
+  margin: '5rem 0',
   gap: '3rem',
 
   '@bp2': {

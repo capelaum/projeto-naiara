@@ -33,6 +33,10 @@ export const TestimonialsWrapper = styled('section', {
   '@bp1': {
     backgroundSize: 'auto',
   },
+
+  '@bp2': {
+    marginBottom: '5rem',
+  },
 })
 
 export const TestimonialsSliderContainer = styled(motion.div, {
