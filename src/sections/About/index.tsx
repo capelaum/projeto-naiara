@@ -13,15 +13,14 @@ import {
 export function About() {
   return (
     <Container as="section" id="sobre">
-      <AboutImageBgWrapper>
-        <Image
-          src={AboutBg}
-          alt="Vetor do logotipo da Dra. Naiara Galvão, com um formato de flor, em baixa opacidade."
-          blurDataURL={AboutBg.blurDataURL}
-        />
-      </AboutImageBgWrapper>
-
       <AboutContentWrapper>
+        <AboutImageBgWrapper>
+          <Image
+            src={AboutBg}
+            alt="Vetor do logotipo da Dra. Naiara Galvão, com um formato de flor, em baixa opacidade."
+          />
+        </AboutImageBgWrapper>
+
         <AboutImageWrapper
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -32,6 +31,7 @@ export function About() {
           viewport={{ once: true }}
         >
           <Image
+            priority
             src={AboutImage}
             alt="Foto profissional da Dra. Naiara Galvão de pé em seu consultório, com um vestido florido branco com detalhes vermelhos, exibindo um largo e caloroso sorriso."
           />

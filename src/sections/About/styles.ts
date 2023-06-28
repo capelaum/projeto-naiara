@@ -3,6 +3,7 @@ import { styled } from '~/styles/stitches.config'
 
 export const AboutContentWrapper = styled('div', {
   width: '100%',
+  position: 'relative',
 
   margin: '6rem 0 8rem 0',
 
@@ -72,7 +73,7 @@ export const AboutImageBgWrapper = styled('div', {
 
   position: 'absolute',
 
-  right: -450,
+  right: -452,
   top: '50%',
   transform: 'translateY(-50%)',
 
