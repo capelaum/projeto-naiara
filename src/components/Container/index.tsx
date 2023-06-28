@@ -1,14 +1,14 @@
-import { ElementType, ReactNode } from 'react'
+import { ElementType, HTMLAttributes, ReactNode } from 'react'
 import { Wrapper } from './styles'
 
-interface ContainerProps {
+interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
   children: ReactNode
   as?: ElementType
 }
 
-export function Container({ children, as }: ContainerProps) {
+export function Container({ children, as, ...props }: ContainerProps) {
   return (
-    <Wrapper as={as} className="container">
+    <Wrapper as={as} className="container" {...props}>
       {children}
     </Wrapper>
   )

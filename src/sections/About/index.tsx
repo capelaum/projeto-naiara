@@ -12,7 +12,7 @@ import {
 
 export function About() {
   return (
-    <Container as="section">
+    <Container as="section" id="sobre">
       <AboutImageBgWrapper>
         <Image
           src={AboutBg}

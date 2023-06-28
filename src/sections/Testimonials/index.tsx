@@ -89,7 +89,7 @@ export function Testimonials() {
   )
 
   return (
-    <TestimonialsWrapper>
+    <TestimonialsWrapper id="depoimentos">
       <Container>
         <SectionHeading title="Depoimentos" />
       </Container>

@@ -28,7 +28,7 @@ export function Contact() {
   )
 
   return (
-    <Container as="section">
+    <Container as="section" id="contato">
       <ContactWrapper>
         <ContactContent>
           <SectionHeading title="Contato" />

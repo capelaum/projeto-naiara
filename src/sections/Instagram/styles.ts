@@ -10,7 +10,7 @@ export const InstaWrapper = styled(motion.div, {
   gap: '1rem',
   width: '100%',
 
-  marginBottom: '5rem',
+  marginBottom: '8rem',
 
   '.wx-widget-container': {
     maxWidth: 'none !important',

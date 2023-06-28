@@ -8,6 +8,7 @@ export const HeroWrapper = styled('section', {
   position: 'relative',
 
   padding: '10rem 0',
+  marginTop: 97,
 
   display: 'flex',
   justifyContent: 'center',

@@ -20,7 +20,7 @@ export const TestimonialsWrapper = styled('section', {
   alignItems: 'center',
 
   padding: '2.5rem 1.5rem',
-  marginBottom: '5rem',
+  marginBottom: '8rem',
 
   [`& ${Heading}`]: {
     color: '$white',

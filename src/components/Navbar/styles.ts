@@ -4,6 +4,7 @@ export const NavbarWrapper = styled('header', {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
+
   padding: '1rem 1.5rem',
 
   position: 'fixed',
@@ -11,20 +12,18 @@ export const NavbarWrapper = styled('header', {
 
   color: '$white',
 
-  zIndex: 999,
+  zIndex: 99,
 
-  background: 'rgba(150, 63, 51, 0.8)',
-  backdropFilter: 'blur(3px)',
-
-  transition: 'all 0.5s ease-in-out',
+  transition: 'all 0.3s ease-in-out',
+  backdropFilter: 'blur(2px)',
 
   variants: {
     isScrolled: {
       true: {
-        top: 0,
+        background: 'rgba(150, 63, 51, 0.9)',
       },
       false: {
-        top: '-100%',
+        background: 'rgba(150, 63, 51, 0.85)',
       },
     },
   },
@@ -61,6 +60,19 @@ export const NavBarSocial = styled('div', {
       filter: 'brightness(1.2)',
     },
   },
+
+  '@bp4': {
+    display: 'none',
+  },
+})
+
+export const MobileSocial = styled(NavBarSocial, {
+  marginTop: 'auto',
+  gap: '1.5rem',
+
+  '@bp4': {
+    display: 'flex',
+  },
 })
 
 export const NavbarRight = styled('nav', {
@@ -68,36 +80,100 @@ export const NavbarRight = styled('nav', {
   alignItems: 'center',
   gap: '2rem',
 
-  a: {
-    position: 'relative',
+  '@bp2': {
+    display: 'none',
+  },
+})
 
-    color: '$white',
-    textDecoration: 'none',
-    fontSize: '$md',
-    fontWeight: '$medium',
-    borderBottom: '3px solid transparent',
-    padding: '0.75rem 0',
+export const MobileMenuButton = styled('button', {
+  display: 'none',
 
-    '&:hover': {
-      '&::after': {
-        content: '""',
-        width: '100%',
-        position: 'absolute',
+  background: 'transparent',
+  color: '$white',
+
+  '&:hover': {
+    filter: 'brightness(1.2)',
+    color: '$highlight',
+  },
+
+  '@bp2': {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+})
+
+export const MobileMenu = styled('div', {
+  position: 'fixed',
+  width: '100vw',
+  height: '100vh',
+
+  background: 'rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(3px)',
+
+  display: 'none',
+
+  transition: '$default',
+
+  variants: {
+    isOpen: {
+      true: {
+        opacity: 1,
+        zIndex: 999,
+      },
+      false: {
+        opacity: 0,
+        zIndex: -1,
       },
     },
+  },
 
-    '&::after': {
-      content: '""',
-      width: 0,
-      height: 3,
-      backgroundColor: '$highlight',
-      position: 'absolute',
-      bottom: 0,
-      left: 0,
-      display: 'block',
-      borderRadius: '$full',
+  '@bp2': {
+    display: 'flex',
+  },
+})
 
-      transition: '$slow',
+export const MobileMenuNavHeader = styled('div', {
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'flex-start',
+  width: '100%',
+})
+
+export const MobileMenuNav = styled('nav', {
+  position: 'fixed',
+  width: 300,
+  height: '100vh',
+  zIndex: 9991,
+
+  background: 'rgba(150, 63, 51, 0.9)',
+
+  padding: '1rem 1.5rem',
+  display: 'none',
+
+  flexDirection: 'column',
+  justifyContent: 'flex-start',
+  alignItems: 'flex-start',
+  gap: '2rem',
+
+  transition: '$default',
+
+  img: {
+    marginBottom: '2rem',
+  },
+
+  variants: {
+    isOpen: {
+      true: {
+        transform: 'translateX(0)',
+      },
+      false: {
+        transform: 'translateX(-100%)',
+      },
     },
+  },
+
+  '@bp2': {
+    display: 'flex',
   },
 })
