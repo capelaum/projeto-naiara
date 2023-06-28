@@ -28,9 +28,9 @@ export function Hero() {
           </Heading>
 
           <Text size="lg" weight="medium">
-            Venha cuidar de sua saúde feminina e tenha um acompanhamento em
-            todas as suas fases, da adolescência à menopausa, da pré-concepção
-            ao pós-parto, com respeito, sem julgamentos ou “PRÉconceitos”.
+            Venha cuidar de sua saúde e tenha um acompanhamento em todas as
+            fases da vida, da adolescência à menopausa, da pré-concepção ao
+            pós-parto, com respeito, sem julgamentos ou “PRÉconceitos”.
           </Text>
 
           <ContactButton />
