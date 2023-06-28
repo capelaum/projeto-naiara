@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { styled } from '~/styles/stitches.config'
 
 export const AboutContentWrapper = styled('div', {
@@ -66,23 +67,11 @@ export const AboutContent = styled(motion.div, {
   },
 })
 
-export const AboutImageBgWrapper = styled('div', {
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-
+export const AboutImageBg = styled(Image, {
   position: 'absolute',
 
-  right: -452,
+  right: -450,
   top: '50%',
   transform: 'translateY(-50%)',
-
   zIndex: -1,
-
-  img: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-    objectPosition: 'center',
-  },
 })

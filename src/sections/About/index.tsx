@@ -6,7 +6,7 @@ import { Text } from '~/components/Text'
 import {
   AboutContent,
   AboutContentWrapper,
-  AboutImageBgWrapper,
+  AboutImageBg,
   AboutImageWrapper,
 } from './styles'
 
@@ -14,12 +14,11 @@ export function About() {
   return (
     <Container as="section" id="sobre">
       <AboutContentWrapper>
-        <AboutImageBgWrapper>
-          <Image
-            src={AboutBg}
-            alt="Vetor do logotipo da Dra. Naiara Galvão, com um formato de flor, em baixa opacidade."
-          />
-        </AboutImageBgWrapper>
+        <AboutImageBg
+          src={AboutBg}
+          alt="Vetor do logotipo da Dra. Naiara Galvão, com um formato de flor, em baixa opacidade."
+          width={900}
+        />
 
         <AboutImageWrapper
           initial={{ opacity: 0, y: 20 }}
@@ -31,7 +30,6 @@ export function About() {
           viewport={{ once: true }}
         >
           <Image
-            priority
             src={AboutImage}
             alt="Foto profissional da Dra. Naiara Galvão de pé em seu consultório, com um vestido florido branco com detalhes vermelhos, exibindo um largo e caloroso sorriso."
           />
