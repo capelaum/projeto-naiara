@@ -32,7 +32,7 @@ export const HeroWrapper = styled('section', {
     minHeight: '100%',
     height: 'auto',
     flexDirection: 'column',
-    padding: '5rem 0 0 0',
+    padding: '3rem 0 0 0',
   },
 })
 

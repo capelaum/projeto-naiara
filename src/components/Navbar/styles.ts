@@ -29,7 +29,7 @@ export const NavbarWrapper = styled('header', {
 
     isMobileMenuOpen: {
       true: {
-        display: 'none',
+        background: '$secondary',
       },
       false: {
         display: 'flex',
@@ -48,7 +48,7 @@ export const NavbarWrapper = styled('header', {
       isMobileMenuOpen: true,
 
       css: {
-        display: 'none',
+        background: 'transparent',
       },
     },
     {
@@ -56,7 +56,7 @@ export const NavbarWrapper = styled('header', {
       isMobileMenuOpen: true,
 
       css: {
-        display: 'none',
+        background: '$secondary',
       },
     },
   ],
