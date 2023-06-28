@@ -27,7 +27,7 @@ export function Services() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  delay: 0.3 * idx,
+                  delay: 0.2 * idx,
                   duration: 0.5,
                 }}
                 viewport={{ once: true }}
