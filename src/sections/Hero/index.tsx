@@ -23,15 +23,14 @@ export function Hero() {
             Obstetrícia e Ginecologia
           </Text>
 
-          <Heading size="lg" as="h1" weight="regular">
-            Saúde da mulher, prevenção e acompanhamento em todas as fases da sua
-            vida
+          <Heading size="xl" as="h1" weight="regular">
+            Saúde Feminina em <br /> Todas as Fases da vida
           </Heading>
 
           <Text size="lg" weight="medium">
-            Venha cuidar de e acompanhar todas as suas fases, da adolescência à
-            menopausa, da pré-concepção ao pós-parto, sem julgamentos ou
-            “PRÉconceitos”.
+            Venha cuidar de sua saúde feminina e tenha um acompanhamento em
+            todas as suas fases, da adolescência à menopausa, da pré-concepção
+            ao pós-parto, com respeito, sem julgamentos ou “PRÉconceitos”.
           </Text>
 
           <ContactButton />

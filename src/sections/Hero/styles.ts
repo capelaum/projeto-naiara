@@ -53,7 +53,7 @@ export const HeroContent = styled(motion.div, {
   zIndex: 3,
 
   h1: {
-    maxWidth: '50%',
+    maxWidth: '45%',
     width: '100%',
     margin: '1rem 0 1.5rem 0',
     lineHeight: '$short',
@@ -63,7 +63,7 @@ export const HeroContent = styled(motion.div, {
   p: {
     maxWidth: '540px',
     width: '100%',
-    lineHeight: '$short',
+    lineHeight: '$base',
     marginBottom: '2.5rem',
   },
 
