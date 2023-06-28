@@ -6,6 +6,8 @@ import ScrollLink from '~/components/ScrollLink'
 import { Text } from '~/components/Text'
 import { styled } from '~/styles/stitches.config'
 
+Container.toString = () => '.container'
+
 export const FooterWrapper = styled('footer', {
   width: '100%',
   backgroundColor: '$primary',
