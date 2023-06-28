@@ -45,7 +45,12 @@ const ScrollLink = ({ children, variant, ...props }: ScrollLinkProps) => {
   }
 
   return (
-    <StyledLink variant={variant} {...props} onClick={handleOnClick}>
+    <StyledLink
+      variant={variant}
+      {...props}
+      onClick={handleOnClick}
+      className="scroll-link"
+    >
       {children}
     </StyledLink>
   )

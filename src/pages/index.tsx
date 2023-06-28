@@ -4,6 +4,7 @@ import { Navbar } from '~/components/Navbar'
 import { About } from '~/sections/About'
 import { Appointment } from '~/sections/Appointment'
 import { Contact } from '~/sections/Contact'
+import { Footer } from '~/sections/Footer'
 import { Hero } from '~/sections/Hero'
 import { Instagram } from '~/sections/Instagram'
 import { Services } from '~/sections/Services'
@@ -28,6 +29,8 @@ export default function Home() {
         <Instagram />
         <Contact />
       </HomeMain>
+
+      <Footer />
     </>
   )
 }

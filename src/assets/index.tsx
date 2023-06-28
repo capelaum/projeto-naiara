@@ -1,6 +1,7 @@
 import AboutBg from '~/assets/images/about-bg.png'
 import About from '~/assets/images/about.jpg'
 import BgPatternRed from '~/assets/images/bg-pattern-red.svg'
+import FooterLogo from '~/assets/images/footer-logo.png'
 import Hero from '~/assets/images/hero.jpg'
 import Contraceptive from '~/assets/images/icons/anticoncepcional.png'
 import Gynecology from '~/assets/images/icons/ginecologia.png'
@@ -25,6 +26,7 @@ export {
   About,
   AboutBg,
   BgPatternRed,
+  FooterLogo,
   Hero,
   InstaProfile,
   LogoWhite,
