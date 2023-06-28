@@ -73,6 +73,24 @@ export const FooterLinks = styled('div', {
   [`& ${ScrollLink}`]: {
     paddingLeft: 0,
     fontSize: '$lg',
+
+    '@bp2': {
+      '&:hover': {
+        '&::after': {
+          width: '100%',
+        },
+      },
+
+      '&::after': {
+        width: 0,
+        height: 2,
+        bottom: 0,
+        left: 0,
+        top: 28,
+
+        transition: '$slow',
+      },
+    },
   },
 
   '@bp2': {

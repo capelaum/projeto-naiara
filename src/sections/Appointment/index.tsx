@@ -2,7 +2,7 @@ import { ContactButton } from '~/components/ContactButton'
 import { Container } from '~/components/Container'
 import { Heading } from '~/components/Heading'
 import { Text } from '~/components/Text'
-import { AppointmentGallery } from './AppointmentSlider'
+import { AppointmentGallery } from './AppointmentGallery'
 import {
   AppointmentContent,
   AppointmentText,
@@ -13,7 +13,15 @@ export function Appointment() {
   return (
     <Container as="section">
       <AppointmentWrapper>
-        <AppointmentContent>
+        <AppointmentContent
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.5,
+            duration: 0.5,
+          }}
+          viewport={{ once: true }}
+        >
           <Heading size="lg" as="h1">
             Atendimento Humano, <br /> <span>leveza, empatia</span>
           </Heading>

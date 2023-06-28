@@ -20,7 +20,7 @@ export const ContactWrapper = styled('div', {
   },
 })
 
-export const ContactContent = styled('div', {
+export const ContactContent = styled(motion.div, {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',

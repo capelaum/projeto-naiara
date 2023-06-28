@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { styled } from '~/styles/stitches.config'
 
 export const AboutContentWrapper = styled('div', {
@@ -20,7 +21,7 @@ export const AboutContentWrapper = styled('div', {
   },
 })
 
-export const AboutImageWrapper = styled('div', {
+export const AboutImageWrapper = styled(motion.div, {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
@@ -42,7 +43,7 @@ export const AboutImageWrapper = styled('div', {
   },
 })
 
-export const AboutContent = styled('div', {
+export const AboutContent = styled(motion.div, {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',

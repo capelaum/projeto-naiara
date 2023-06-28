@@ -10,7 +10,15 @@ export function Hero() {
   return (
     <>
       <HeroWrapper id="inicio">
-        <HeroContent>
+        <HeroContent
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.4,
+            duration: 0.5,
+          }}
+          viewport={{ once: true }}
+        >
           <Text size="md" weight="medium" as="h2">
             Obstetrícia e Ginecologia
           </Text>
@@ -29,7 +37,15 @@ export function Hero() {
           <ContactButton />
         </HeroContent>
 
-        <HeroImageWrapper>
+        <HeroImageWrapper
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{
+            delay: 0.2,
+            duration: 0.5,
+          }}
+          viewport={{ once: true }}
+        >
           <Image
             priority
             src={HeroImage}
@@ -39,7 +55,15 @@ export function Hero() {
       </HeroWrapper>
 
       <Container as="section">
-        <Notice>
+        <Notice
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 1,
+            duration: 0.5,
+          }}
+          viewport={{ once: true }}
+        >
           <Text weight="medium" size="md">
             Trabalhamos exclusivamente com atendimento particular, não atendemos
             convênios ou planos de saúde. No entanto, fique tranquilo(a), se

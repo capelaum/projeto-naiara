@@ -21,8 +21,17 @@ export function Services() {
       <ServicesCardsWrapper>
         <Container>
           <ServicesCards>
-            {services.map((service) => (
-              <ServiceCard key={service.id}>
+            {services.map((service, idx) => (
+              <ServiceCard
+                key={service.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.3 * idx,
+                  duration: 0.5,
+                }}
+                viewport={{ once: true }}
+              >
                 <Image src={service.icon} alt={service.title} />
                 <Heading>{service.title}</Heading>
                 <Text weight="medium">{service.content}</Text>

@@ -38,7 +38,7 @@ export const AppointmentWrapper = styled('div', {
   },
 })
 
-export const AppointmentContent = styled('div', {
+export const AppointmentContent = styled(motion.div, {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',

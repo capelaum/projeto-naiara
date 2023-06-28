@@ -22,14 +22,30 @@ export function About() {
       </AboutImageBgWrapper>
 
       <AboutContentWrapper>
-        <AboutImageWrapper>
+        <AboutImageWrapper
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.2,
+            duration: 0.5,
+          }}
+          viewport={{ once: true }}
+        >
           <Image
             src={AboutImage}
             alt="Foto profissional da Dra. Naiara Galvão de pé em seu consultório, com um vestido florido branco com detalhes vermelhos, exibindo um largo e caloroso sorriso."
           />
         </AboutImageWrapper>
 
-        <AboutContent>
+        <AboutContent
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.5,
+            duration: 0.5,
+          }}
+          viewport={{ once: true }}
+        >
           <SectionHeading title="Sobre" />
 
           <Text size="lg" weight="medium">

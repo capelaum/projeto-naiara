@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { StaticImageData } from 'next/image'
 import { ServicesBg } from '~/assets'
 import { Container } from '~/components/Container'
@@ -78,7 +79,7 @@ export const ServicesCards = styled('div', {
   gap: '$20',
 })
 
-export const ServiceCard = styled('article', {
+export const ServiceCard = styled(motion.article, {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',

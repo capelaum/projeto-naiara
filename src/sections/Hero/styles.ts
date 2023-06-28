@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { Text } from '~/components/Text'
 import { styled } from '~/styles/stitches.config'
 
@@ -36,7 +37,7 @@ export const HeroWrapper = styled('section', {
   },
 })
 
-export const HeroContent = styled('div', {
+export const HeroContent = styled(motion.div, {
   display: 'flex',
   flexDirection: 'column',
 
@@ -98,7 +99,7 @@ export const HeroContent = styled('div', {
   },
 })
 
-export const HeroImageWrapper = styled('div', {
+export const HeroImageWrapper = styled(motion.div, {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -153,13 +154,13 @@ export const HeroImageWrapper = styled('div', {
   },
 })
 
-export const Notice = styled('article', {
+export const Notice = styled(motion.article, {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
 
   padding: '1.25rem',
-  margin: '8rem 0 0 0',
+  margin: '5rem 0 0 0',
 
   width: '100%',
 
