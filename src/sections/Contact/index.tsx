@@ -104,6 +104,7 @@ export function Contact() {
         >
           <ContactMapContainer>
             <ContactMap
+              title={activeMap?.title}
               key={activeMap?.id}
               src={activeMap?.link}
               allowFullScreen
