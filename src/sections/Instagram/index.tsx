@@ -37,6 +37,7 @@ export function Instagram() {
         <Script
           src="https://cdn2.woxo.tech/a.js#613117f8ed78380016017a38"
           async
+          defer
           data-usrc
           strategy="afterInteractive"
         ></Script>
