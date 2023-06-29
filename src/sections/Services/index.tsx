@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useWindowSize } from 'usehooks-ts'
 import { Container } from '~/components/Container'
 import { Heading } from '~/components/Heading'
 import { SectionHeading } from '~/components/SectionHeading'
@@ -12,6 +13,16 @@ import {
 } from './styles'
 
 export function Services() {
+  const { width } = useWindowSize()
+
+  const calculateServiceCardDelay = (idx: number) => {
+    if (width < 768) {
+      return 0.2
+    }
+
+    return 0.2 * idx
+  }
+
   return (
     <ServicesWrapper id="servicos">
       <Container>
@@ -27,7 +38,7 @@ export function Services() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
-                  delay: 0.2 * idx,
+                  delay: calculateServiceCardDelay(idx),
                   duration: 0.5,
                 }}
                 viewport={{ once: true }}

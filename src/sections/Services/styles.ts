@@ -83,7 +83,7 @@ export const ServiceCard = styled(motion.article, {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
-  justifyContent: 'center',
+  justifyContent: 'flex-start',
 
   padding: '2.5rem 2rem',
 
@@ -103,6 +103,6 @@ export const ServiceCard = styled(motion.article, {
   },
 
   p: {
-    textAlign: 'left',
+    textAlign: 'center',
   },
 })
