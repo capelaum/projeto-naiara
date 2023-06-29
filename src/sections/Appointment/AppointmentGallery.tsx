@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { GalleryItem, gallery } from './gallery'
 import {
   AppointmentGalleryWrapper,
@@ -19,6 +19,20 @@ export function AppointmentGallery() {
 
     setActiveImage(nextImage!)
   }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const currentIndex = gallery.findIndex(
+        (image) => image.id === activeImage.id,
+      )
+
+      const nextImage = gallery[currentIndex + 1] ?? gallery[0]
+
+      setActiveImage(nextImage!)
+    }, 5000)
+
+    return () => clearInterval(interval)
+  }, [activeImage.id])
 
   return (
     <AppointmentGalleryWrapper
