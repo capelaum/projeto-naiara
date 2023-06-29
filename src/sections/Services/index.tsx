@@ -26,7 +26,7 @@ export function Services() {
   return (
     <ServicesWrapper id="servicos">
       <Container>
-        <SectionHeading title="SERVIÇOS" />
+        <SectionHeading title="Serviços" />
       </Container>
 
       <ServicesCardsWrapper>
@@ -41,7 +41,7 @@ export function Services() {
                   delay: calculateServiceCardDelay(idx),
                   duration: 0.5,
                 }}
-                viewport={{ once: true }}
+                viewport={{ once: false }}
               >
                 <Image src={service.icon} alt={service.title} />
                 <Heading>{service.title}</Heading>

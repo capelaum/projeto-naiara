@@ -42,8 +42,8 @@ export const ServicesCardsWrapper = styled('div', {
     height: '100%',
     inset: 0,
 
-    background:
-      'linear-gradient(to bottom, rgba(251, 251, 251, 0.8) 0%, rgba(221, 196, 182, 0.5) 10%, rgba(221, 196, 182, 0.75) 50%, rgba(221, 196, 182, 0.9) 95%, $secondary 100%)',
+    background: `linear-gradient(to bottom, rgba(251, 251, 251, 0.8) 0%, rgba(221, 196, 182, 0.5) 10%,
+      rgba(221, 196, 182, 0.75) 50%, rgba(221, 196, 182, 0.9) 95%, $secondary 100%)`,
   },
 
   '&::after': {
@@ -79,7 +79,7 @@ export const ServicesCards = styled('div', {
   gap: '$20',
 })
 
-export const ServiceCard = styled(motion.article, {
+export const ServiceCard = styled(motion.div, {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
@@ -93,6 +93,8 @@ export const ServiceCard = styled(motion.article, {
 
   backgroundColor: '$white',
 
+  transition: 'all 0.3s ease-in-out',
+
   [`& ${Heading}`]: {
     textTransform: 'uppercase',
     marginTop: '1.25rem',
@@ -104,5 +106,10 @@ export const ServiceCard = styled(motion.article, {
 
   p: {
     textAlign: 'center',
+  },
+
+  '&:hover': {
+    transform: 'translateY(-8px) !important',
+    boxShadow: '0 0 12px 4px rgba(150, 63, 51, 0.5)',
   },
 })
