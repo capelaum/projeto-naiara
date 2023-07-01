@@ -64,7 +64,7 @@ export function About() {
             <Text size="md" weight="medium">
               Amo trabalhar com a saúde da mulher por estarmos sempre (ou quase
               sempre) atentas e seguindo a máxima “melhor prevenir que
-              remediar”. Quanto a obstetrica… ah, a obstetricia! Há amdo mais
+              remediar”. Quanto a obstetrica… ah, a obstetricia! Há algo mais
               potente e belo do que ASSISTIR a uma pessoa parindo? Não….
             </Text>
 
