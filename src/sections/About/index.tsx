@@ -8,6 +8,7 @@ import {
   AboutContentWrapper,
   AboutImageBg,
   AboutImageWrapper,
+  AboutText,
 } from './styles'
 
 export function About() {
@@ -46,15 +47,36 @@ export function About() {
         >
           <SectionHeading title="Sobre" />
 
-          <Text size="lg" weight="medium">
-            Olá, sou mãe do Gabriel, nascido em 2022, tutora de quatro gatinhos
-            adotados, médica formada pela Universidade de Brasília, com
-            residência médica em Ginecologia e Obstetrícia no Hospital
-            Universitário de Brasília.
-            <br /> <br />
-            Sou pos-graduada em Ultrassonografia em Ginecologia e Obstetricia e
-            em Medicina Fetal pela NEXUS.
-          </Text>
+          <AboutText>
+            <Text size="md" weight="medium">
+              Olá, sou mãe do Gabriel, nascido em 2022, tutora de quatro
+              gatinhos adotados. Desde muito cedo me identifico com a qualidade
+              de vida e com a natureza. Amo os cuidados com a saúde física e
+              mental. Creio na plenitude: corpo, mente e espírito.
+            </Text>
+
+            <Text size="md" weight="medium">
+              Sou médica formada pela Universidade de Brasília, com residência
+              médica em Ginecologia e Obstetrícia pelo Hospital Universitário de
+              Brasília.
+            </Text>
+
+            <Text size="md" weight="medium">
+              Amo trabalhar com a saúde da mulher por estarmos sempre (ou quase
+              sempre) atentas e seguindo a máxima “melhor prevenir que
+              remediar”. Quanto a obstetrica… ah, a obstetricia! Há amdo mais
+              potente e belo do que ASSISTIR a uma pessoa parindo? Não….
+            </Text>
+
+            <Text size="md" weight="medium">
+              Possuo pós-graduação em Ultrassonografia em Ginecologia e
+              Obstetricia e em Medicina Fetal pela NEXUS.
+            </Text>
+
+            <Text size="md" weight="medium">
+              Te convido a vir me conhecer pessoalmente.
+            </Text>
+          </AboutText>
         </AboutContent>
       </AboutContentWrapper>
     </Container>

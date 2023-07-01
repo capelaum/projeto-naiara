@@ -17,7 +17,7 @@ export const AboutContentWrapper = styled('div', {
     gap: '3rem',
   },
 
-  '@bp3': {
+  '@bp2': {
     flexDirection: 'column-reverse',
     margin: '5rem 0',
   },
@@ -40,7 +40,7 @@ export const AboutImageWrapper = styled(motion.div, {
     border: '1px solid $primary',
   },
 
-  '@bp3': {
+  '@bp2': {
     maxWidth: '100%',
   },
 })
@@ -53,14 +53,27 @@ export const AboutContent = styled(motion.div, {
   gap: '4rem',
   width: '100%',
 
+  '@bp2': {
+    gap: '3rem',
+
+    p: {
+      maxWidth: '100%',
+    },
+  },
+})
+
+export const AboutText = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'flex-start',
+  gap: '1rem',
+
   p: {
     maxWidth: 600,
     backdropFilter: 'blur(3px)',
   },
 
   '@bp2': {
-    gap: '3rem',
-
     p: {
       maxWidth: '100%',
     },
