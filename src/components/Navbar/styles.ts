@@ -23,7 +23,7 @@ export const NavbarWrapper = styled('header', {
         background: 'rgba(150, 63, 51, 0.9)',
       },
       false: {
-        background: 'rgba(150, 63, 51, 0.85)',
+        background: 'rgba(150, 63, 51, 0.8)',
       },
     },
 
@@ -100,7 +100,7 @@ export const NavBarSocial = styled('div', {
 })
 
 export const MobileSocial = styled(NavBarSocial, {
-  marginTop: 'auto',
+  marginTop: '3rem',
   gap: '1.5rem',
 
   '@bp4': {
