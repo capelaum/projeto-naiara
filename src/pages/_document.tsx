@@ -1,4 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 import { Favicon } from '~/components/Head/Favicon'
 import { SEO } from '~/components/Head/SEO'
 import { getCssText } from '~/styles/stitches.config'
@@ -32,8 +33,29 @@ export default class MyDocument extends Document {
             description="Venha cuidar de sua saúde e tenha um acompanhamento em todas as fases da vida, da adolescência à menopausa, da pré-concepção ao pós-parto, com respeito, sem julgamentos ou “PRÉconceitos”."
             url={process.env.NEXT_PUBLIC_URL ?? ''}
           />
+
+          <Script
+            id={process.env.NEXT_PUBLIC_GTM_ID}
+            src={`https://www.googletagmanager.com/gtm.js?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
+            async
+            strategy="afterInteractive"
+            onLoad={() => {
+              console.log('Google Tag Manager loaded!')
+            }}
+          />
         </Head>
         <body>
+          {/* <!-- Google Tag Manager (noscript) --> */}
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GTM_ID}`}
+              height="0"
+              width="0"
+              style={{ display: 'none', visibility: 'hidden' }}
+            ></iframe>
+          </noscript>
+          {/* <!-- End Google Tag Manager (noscript) --> */}
+
           <Main />
           <NextScript />
         </body>

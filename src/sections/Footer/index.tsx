@@ -55,6 +55,7 @@ export function Footer() {
               href="https://www.instagram.com/naigalvao"
               title="Instagram da Dra. Naiara Galvão"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <RiInstagramFill size={24} />
             </Link>
@@ -62,6 +63,7 @@ export function Footer() {
               href={`https://wa.me/5561992561470?text=${message}`}
               title="Whatsapp da Dra. Naiara Galvão"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <RiWhatsappFill size={24} />
             </Link>
