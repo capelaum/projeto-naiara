@@ -41,7 +41,7 @@ export function Services() {
                   delay: calculateServiceCardDelay(idx),
                   duration: 0.5,
                 }}
-                viewport={{ once: false }}
+                viewport={{ once: true }}
               >
                 <Image src={service.icon} alt={service.title} />
                 <Heading>{service.title}</Heading>
