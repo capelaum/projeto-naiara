@@ -1,25 +1,26 @@
-# Next 13 Template
+# [Landing Page - Dra. Naiara Galvão][project]
 
 ## :cloud: Descrição
 
-Aplicação web que localiza os recursos educacionais mais próximos do usuário através de um mapa interativo, contendo filtros de categorias, campo de busca, avaliações, painel de votação e diversas outras funcionalidades.
+Landing page da Dra. Naiara Galvão, uma ginecologista e obstetra, que atende em Brasília, DF. Saiba mais sobre os seus serviços e agende sua consulta!
+
+<img src=".github/Cover.png" />
 
 ## :zap: Tech
 
-- [Typescript][typescript]
 - [Next.js][next]
+- [Typescript][typescript]
 - [Stitches][stitches]
-- [Vitest][vitest]
-- [Husky][husky]
-- [PlopJS][plop]
+- [Framer Motion][framer]
+- [Keen Slider][keen]
+- [React Icons][react_icons]
+- [NextJS Google Analytics][next_ga]
 
+[project]: https://www.naiaragalvao.com.br
 [typescript]: https://www.typescriptlang.org
 [next]: https://nextjs.org
-[vitest]: https://vitest.dev
-[husky]: https://typicode.github.io/husky/#/
 [stitches]: https://stitches.dev
-[plop]: https://plopjs.com
-
-## :page_with_curl: License
-
-This project is under the MIT License - [LICENSE](LICENSE)
+[framer]: https://www.framer.com/motion
+[keen]: https://keen-slider.io
+[react_icons]: https://react-icons.github.io/react-icons
+[next_ga]: https://www.npmjs.com/package/nextjs-google-analytics
