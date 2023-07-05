@@ -4,7 +4,7 @@
 
 Landing page da Dra. Naiara Galvão, uma ginecologista e obstetra, que atende em Brasília, DF. Saiba mais sobre os seus serviços e agende sua consulta!
 
-<img src=".github/Cover.png" />
+<img src=".github/Cover.png" alt="Screenshot da tela inicial da Landing Page - Dra. Naiara Galvão" />
 
 ## :zap: Tech
 
@@ -24,3 +24,8 @@ Landing page da Dra. Naiara Galvão, uma ginecologista e obstetra, que atende em
 [keen]: https://keen-slider.io
 [react_icons]: https://react-icons.github.io/react-icons
 [next_ga]: https://www.npmjs.com/package/nextjs-google-analytics
+
+
+## :page_with_curl: License
+
+This project is under a custom license - [Luís Vinicius Capelletto Landing Page License](LICENSE)
