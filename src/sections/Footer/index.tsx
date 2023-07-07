@@ -89,7 +89,7 @@ export function Footer() {
           <FooterRightImageContainer>
             <Image
               src={FooterLogo}
-              alt="Logo da Dra. Naiara Galvão, escrito seu nome, suas especializações: Ginecologia e Obstetrícia, seu CRM: DF/20851 e RQE: 17851"
+              alt="Dra. Naiara Galvão - Ginecologia e Obstetrícia, CRM: DF/20851 | RQE: 17851."
             />
           </FooterRightImageContainer>
 
