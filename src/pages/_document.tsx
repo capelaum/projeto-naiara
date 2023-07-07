@@ -30,7 +30,7 @@ export default class MyDocument extends Document {
 
           <SEO
             title="Dra. Naiara Galvão - Obstetrícia e Ginecologia"
-            description="Venha cuidar de sua saúde e tenha um acompanhamento em todas as fases da vida, da adolescência à menopausa, da pré-concepção ao pós-parto, com respeito, sem julgamentos ou “PRÉconceitos”."
+            description="Dra. Naiara Galvão - Obstetrícia e Ginecologia - Venha cuidar de sua saúde e tenha um acompanhamento em todas as fases da vida."
             url={process.env.NEXT_PUBLIC_URL ?? ''}
           />
 
