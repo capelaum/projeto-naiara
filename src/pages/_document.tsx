@@ -29,8 +29,8 @@ export default class MyDocument extends Document {
           <Favicon />
 
           <SEO
-            title="Dra. Naiara Galvão - Obstetrícia e Ginecologia"
-            description="Dra. Naiara Galvão - Obstetrícia e Ginecologia - Venha cuidar de sua saúde e tenha um acompanhamento em todas as fases da vida."
+            title="Dra. Naiara Galvão - Ginecologista e Obstetra"
+            description="Ginecologista e Obstetra - Atendimento Particular - Especializada em Medicina Fetal e Ultrassonografia - Venha cuidar de sua saúde e tenha um acompanhamento em todas as fases da vida com a Dra. Naiara Galvão!"
             url={process.env.NEXT_PUBLIC_URL ?? ''}
           />
 
