@@ -23,7 +23,8 @@ export function Appointment() {
           viewport={{ once: true }}
         >
           <Heading size="lg" as="h1">
-            Atendimento Humano, <br /> <span>leveza, empatia</span>
+            Atendimento Humanizado, <br />
+            <span>com leveza e empatia</span>
           </Heading>
 
           <AppointmentText>

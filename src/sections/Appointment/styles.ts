@@ -54,12 +54,17 @@ export const AppointmentContent = styled(motion.div, {
 
     span: {
       borderBottom: '3px solid $highlight',
-      paddingBottom: '0.5rem',
+      paddingBottom: '0.25rem',
     },
   },
 
   '@bp2': {
     maxWidth: '100%',
+
+    span: {
+      borderBottom: '3px solid $highlight',
+      paddingBottom: '0.125rem',
+    },
   },
 })
 
