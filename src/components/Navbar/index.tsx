@@ -101,11 +101,11 @@ export function Navbar() {
           </NavbarLeft>
 
           <NavbarRight>
-            <ScrollLink href="#sobre" title="Sobre">
-              Sobre
-            </ScrollLink>
             <ScrollLink href="#servicos" title="Serviços">
               Serviços
+            </ScrollLink>
+            <ScrollLink href="#sobre" title="Sobre">
+              Sobre
             </ScrollLink>
             <ScrollLink href="#depoimentos" title="Depoimentos">
               Depoimentos
@@ -152,19 +152,19 @@ export function Navbar() {
 
           <ScrollLink
             variant="mobile"
-            href="#sobre"
-            title="Sobre"
-            onClick={handleCloseMobileMenu}
-          >
-            Sobre
-          </ScrollLink>
-          <ScrollLink
-            variant="mobile"
             href="#servicos"
             title="Serviços"
             onClick={handleCloseMobileMenu}
           >
             Serviços
+          </ScrollLink>
+          <ScrollLink
+            variant="mobile"
+            href="#sobre"
+            title="Sobre"
+            onClick={handleCloseMobileMenu}
+          >
+            Sobre
           </ScrollLink>
           <ScrollLink
             variant="mobile"

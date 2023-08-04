@@ -5,62 +5,23 @@ export const StyledLink = styled(Link, {
   position: 'relative',
 
   color: '$white',
-  textDecoration: 'none',
 
   fontWeight: '$medium',
+  textDecoration: 'none',
 
-  '&::after': {
-    position: 'absolute',
-    content: '""',
-    backgroundColor: '$highlight',
+  transition: '$default',
 
-    display: 'block',
-    borderRadius: '$full',
+  '&:hover': {
+    filter: 'brightness(1.2)',
+    color: '$highlight',
   },
 
   variants: {
     variant: {
       none: {},
-      default: {
-        borderBottom: '2px solid transparent',
-        fontSize: '$md',
-        padding: '0.75rem 0',
-
-        '&:hover': {
-          '&::after': {
-            width: '100%',
-          },
-        },
-
-        '&::after': {
-          width: 0,
-          height: 2,
-          bottom: 0,
-          left: 0,
-
-          transition: '$slow',
-        },
-      },
+      default: {},
       mobile: {
         fontSize: '$xl',
-
-        '&:hover': {
-          '&::after': {
-            opacity: 1,
-          },
-        },
-
-        '&::after': {
-          opacity: 0,
-          width: 3,
-          height: 20,
-
-          top: '50%',
-          transform: 'translateY(-50%)',
-          left: -14,
-
-          transition: '$fast',
-        },
       },
     },
   },
