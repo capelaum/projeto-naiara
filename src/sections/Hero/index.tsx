@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
-import Image from 'next/image'
-import { Hero as HeroImage } from '~/assets'
+import { AboutBg, Hero as HeroImg } from '~/assets'
 import { ContactButton } from '~/components/ContactButton'
 import { Container } from '~/components/Container'
 import { Heading } from '~/components/Heading'
@@ -8,6 +7,8 @@ import { Text } from '~/components/Text'
 import {
   HeroContainer,
   HeroContent,
+  HeroImage,
+  HeroImageBg,
   HeroImageWrapper,
   HeroWrapper,
   Notice,
@@ -53,10 +54,16 @@ export function Hero() {
             }}
             viewport={{ once: true }}
           >
-            <Image
+            <HeroImage
               priority
-              src={HeroImage}
+              src={HeroImg}
               alt="Foto profissional da Dra. Naiara galvão, sentada de frente para uma mesa, com os braços cruzados e com um computador branco a sua frente, exibindo um largo sorriso caloroso."
+            />
+
+            <HeroImageBg
+              src={AboutBg}
+              alt="Vetor do logotipo da Dra. Naiara Galvão, com um formato de flor, em baixa opacidade."
+              width={900}
             />
           </HeroImageWrapper>
         </HeroWrapper>

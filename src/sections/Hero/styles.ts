@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { Heading } from '~/components/Heading'
 import { Text } from '~/components/Text'
 import { styled } from '~/styles/stitches.config'
@@ -84,20 +85,36 @@ export const HeroImageWrapper = styled(motion.div, {
   alignItems: 'center',
   justifyContent: 'center',
 
-  flex: 1,
+  position: 'relative',
 
+  // border: '1px solid red',
+
+  flex: 1,
+})
+
+export const HeroImage = styled(Image, {
   maxWidth: 400,
   borderRadius: '$md',
   border: '2px solid $primary',
+  height: '100%',
+  width: '100%',
+  objectFit: 'cover',
+  objectPosition: 'center',
 
-  overflow: 'hidden',
+  zIndex: 3,
+})
 
-  img: {
-    height: '100%',
-    width: '100%',
-    objectFit: 'cover',
-    objectPosition: 'center',
-  },
+export const HeroImageBg = styled(Image, {
+  position: 'absolute',
+
+  height: 'auto',
+  width: 1000,
+
+  zIndex: 0,
+
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50.65%, -50%)',
 })
 
 export const Notice = styled(motion.section, {
