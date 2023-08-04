@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { Hero as HeroImage } from '~/assets'
 import { ContactButton } from '~/components/ContactButton'
@@ -53,26 +54,35 @@ export function Hero() {
         </HeroImageWrapper>
       </HeroWrapper>
 
-      <Container as="section">
-        <Notice
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+      <Notice>
+        <Container
+          as={motion.div}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           transition={{
             delay: 1,
             duration: 0.5,
           }}
           viewport={{ once: true }}
         >
-          <Text weight="medium" size="md">
-            Trabalhamos exclusivamente com atendimento particular, não atendemos
-            convênios ou planos de saúde. No entanto, fique tranquilo(a), se
-            você possui algum convênio ou plano de saúde, você pode agendar sua
-            consulta na modalidade particular. Nós iremos fornecer orientações e
-            assistência para que você possa solicitar o reembolso junto ao seu
-            convênio e também aproveitar possíveis deduções no Imposto de Renda.
+          <Heading as="h1">Planos de Saúde</Heading>
+
+          <Text weight="medium" as="h2">
+            Informações
           </Text>
-        </Notice>
-      </Container>
+
+          <Text weight="regular" size="md">
+            O Atendimento é feito sob a forma de reembolso, não atendemos
+            convênios/planos de saúde. Porém, para todos os atendimentos e
+            procedimentos, emitimos nota fiscal para que possa solicitar o
+            reembolso junto ao seu plano de saúde. Além disso, caso seja
+            necessário, fornecemos relatórios para restituição na declaração do
+            Imposto de Renda, proporcionando uma experiência tranquila para
+            você. Dúvidas? Não se preocupe, estou aqui para ajudar! Agende agora
+            mesmo a sua consulta e garanta um atendimento personalizado!
+          </Text>
+        </Container>
+      </Notice>
     </>
   )
 }
