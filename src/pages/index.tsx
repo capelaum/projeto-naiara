@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Dra. Naiara Galvão - Obstetrícia e Ginecologia</title>
+        <title>Dra. Naiara Galvão - Ginecologista e Obstetra</title>
       </Head>
 
       <Navbar />
