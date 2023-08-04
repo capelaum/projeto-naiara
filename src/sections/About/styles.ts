@@ -6,7 +6,7 @@ export const AboutContentWrapper = styled('div', {
   width: '100%',
   position: 'relative',
 
-  margin: '6rem 0 8rem 0',
+  marginBottom: '8rem',
 
   display: 'flex',
   justifyContent: 'center',
@@ -19,7 +19,7 @@ export const AboutContentWrapper = styled('div', {
 
   '@bp2': {
     flexDirection: 'column-reverse',
-    margin: '5rem 0',
+    marginBottom: '5rem',
   },
 })
 
@@ -29,7 +29,7 @@ export const AboutImageWrapper = styled(motion.div, {
   alignItems: 'center',
 
   width: '100%',
-  maxWidth: 400,
+  maxWidth: 450,
 
   img: {
     width: '100%',

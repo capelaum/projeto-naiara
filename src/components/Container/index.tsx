@@ -1,8 +1,8 @@
-import { MotionProps } from 'framer-motion'
+import { HTMLMotionProps } from 'framer-motion'
 import { ElementType, ReactNode } from 'react'
 import { Wrapper } from './styles'
 
-interface ContainerProps extends MotionProps {
+interface ContainerProps extends HTMLMotionProps<'div'> {
   children: ReactNode
   as?: ElementType
 }

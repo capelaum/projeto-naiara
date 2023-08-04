@@ -41,9 +41,9 @@ export default function Home() {
 
       <HomeMain id="main">
         <Hero />
-        <About />
-        <Services />
         <Appointment />
+        <Services />
+        <About />
         <Testimonials />
         <Instagram />
         <Contact />

@@ -17,19 +17,6 @@ export const HeroWrapper = styled('section', {
 
   backgroundColor: '$secondary',
 
-  '&::after': {
-    content: '""',
-    position: 'absolute',
-    width: '100%',
-    height: 300,
-    zIndex: 3,
-    bottom: -300,
-    right: 0,
-    left: 0,
-    background:
-      'linear-gradient(to bottom, $secondary 0%, rgba(221, 196, 182, 0.5) 50%, transparent 100%)',
-  },
-
   '@bp1': {
     minHeight: '100%',
     height: 'auto',
@@ -130,8 +117,7 @@ export const HeroImageWrapper = styled(motion.div, {
     zIndex: 1,
     top: 0,
     right: 0,
-    background: `linear-gradient(to right, $secondary 0%, rgba(221, 196, 182, 0.5) 25%, transparent 50%, transparent 100%),
-      linear-gradient(to top, $secondary 0%, rgba(221, 196, 182, 0.5) 10%, transparent 15%, transparent 100%)`,
+    background: `linear-gradient(to right, $secondary 0%, rgba(221, 196, 182, 0.5) 25%, transparent 50%, transparent 100%)`,
   },
 
   '@bp1': {
@@ -149,8 +135,7 @@ export const HeroImageWrapper = styled(motion.div, {
       zIndex: 1,
       top: 0,
       right: 0,
-      background: `linear-gradient(to bottom, $secondary 0%, rgba(221, 196, 182, 0.5) 10%, transparent 20%, transparent 100%),
-        linear-gradient(to top, $secondary 0%, rgba(221, 196, 182, 0.5) 10%, transparent 20%, transparent 100%)`,
+      background: `linear-gradient(to bottom, $secondary 0%, rgba(221, 196, 182, 0.5) 10%, transparent 20%, transparent 100%)`,
     },
   },
 })
@@ -163,12 +148,10 @@ export const Notice = styled(motion.section, {
   backgroundColor: '$primary',
   color: '$white',
 
-  padding: '2rem 0',
+  padding: '2.5rem 0',
 
   width: '100%',
   zIndex: 3,
-
-  boxShadow: '$default',
 
   [`& ${Heading}`]: {
     color: '$white',

@@ -12,18 +12,22 @@ export const AppointmentWrapper = styled('div', {
 
   display: 'flex',
   justifyContent: 'space-between',
-  alignItems: 'flex-start',
+  alignItems: 'start',
 
-  marginBottom: '8rem',
+  margin: '8rem 0 6rem 0',
+
   gap: '7.5rem',
 
   '@bp1': {
+    alignItems: 'center',
     gap: '2.5rem',
+    margin: '8rem 0',
   },
 
   '@bp2': {
     flexDirection: 'column',
     gap: '5rem',
+    margin: '5rem 0 6rem 0',
   },
 
   [`& ${SliderDots}`]: {

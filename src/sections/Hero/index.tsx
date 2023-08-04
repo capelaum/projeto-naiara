@@ -65,7 +65,9 @@ export function Hero() {
           }}
           viewport={{ once: true }}
         >
-          <Heading as="h1">Planos de Saúde</Heading>
+          <Heading as="h1" size="md">
+            Planos de Saúde
+          </Heading>
 
           <Text weight="medium" as="h2">
             Informações
