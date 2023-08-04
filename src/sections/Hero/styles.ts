@@ -108,7 +108,7 @@ export const HeroImageBg = styled(Image, {
   position: 'absolute',
 
   height: 'auto',
-  width: 1000,
+  width: 1200,
 
   zIndex: 0,
 

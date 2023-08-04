@@ -61,6 +61,7 @@ export function Hero() {
             />
 
             <HeroImageBg
+              priority
               src={AboutBg}
               alt="Vetor do logotipo da Dra. Naiara Galvão, com um formato de flor, em baixa opacidade."
               width={900}
