@@ -74,14 +74,13 @@ export function Hero() {
           </Text>
 
           <Text weight="regular" size="md">
-            O Atendimento é feito sob a forma de reembolso, não atendemos
-            convênios/planos de saúde. Porém, para todos os atendimentos e
-            procedimentos, emitimos nota fiscal para que possa solicitar o
-            reembolso junto ao seu plano de saúde. Além disso, caso seja
-            necessário, fornecemos relatórios para restituição na declaração do
-            Imposto de Renda, proporcionando uma experiência tranquila para
-            você. Dúvidas? Não se preocupe, estou aqui para ajudar! Agende agora
-            mesmo a sua consulta e garanta um atendimento personalizado!
+            O atendimento é feito sob a forma de reembolso, não atendemos
+            convênios/planos de saúde. Para todos os atendimentos e
+            procedimentos, emitimos nota fiscal para que possa ser solicitado o
+            reembolso junto ao seu plano de saúde e para declaração do Imposto
+            de Renda (IRPF), proporcionando uma experiência tranquila para você.
+            Dúvidas? Não se preocupe, estou aqui para ajudar! Agende agora mesmo
+            a sua consulta e garanta um atendimento personalizado!
           </Text>
         </Container>
       </Notice>
