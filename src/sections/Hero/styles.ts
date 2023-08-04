@@ -49,7 +49,7 @@ export const HeroContent = styled(motion.div, {
   },
 
   p: {
-    maxWidth: '540px',
+    maxWidth: '520px',
     width: '100%',
     lineHeight: '$base',
     marginBottom: '2.5rem',
@@ -93,7 +93,6 @@ export const HeroImageWrapper = styled(motion.div, {
   justifyContent: 'center',
   width: '50%',
   height: '100%',
-  // marginTop: 97,
 
   position: 'absolute',
   top: 0,
