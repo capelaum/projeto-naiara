@@ -37,7 +37,7 @@ export const AboutImageWrapper = styled(motion.div, {
     objectFit: 'cover',
     objectPosition: 'center',
     borderRadius: '$md',
-    border: '1px solid $primary',
+    border: '2px solid $primary',
   },
 
   '@bp2': {
