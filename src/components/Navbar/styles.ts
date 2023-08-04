@@ -23,7 +23,7 @@ export const NavbarWrapper = styled('header', {
         background: 'rgba(150, 63, 51, 0.9)',
       },
       false: {
-        background: 'rgba(150, 63, 51, 0.9)',
+        background: 'rgba(150, 63, 51, 0.85)',
       },
     },
 
