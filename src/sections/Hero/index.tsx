@@ -29,7 +29,7 @@ export function Hero() {
             viewport={{ once: true }}
           >
             <Text size="md" weight="medium" as="h2">
-              Obstetrícia e Ginecologia
+              Ginecologia e Obstetrícia
             </Text>
 
             <Heading size="xl" as="h1" weight="regular">
