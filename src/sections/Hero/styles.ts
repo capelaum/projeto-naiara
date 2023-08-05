@@ -1,27 +1,33 @@
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { Heading } from '~/components/Heading'
 import { Text } from '~/components/Text'
 import { styled } from '~/styles/stitches.config'
 
-export const HeroWrapper = styled('section', {
-  height: '100%',
+export const HeroContainer = styled('section', {
   width: '100%',
-
-  position: 'relative',
-
-  padding: '10rem 0',
-  marginTop: 97,
+  backgroundColor: '$secondary',
 
   display: 'flex',
   justifyContent: 'center',
+  alignItems: 'center',
 
-  backgroundColor: '$secondary',
+  flexDirection: 'column',
+})
+
+export const HeroWrapper = styled('div', {
+  width: '100%',
+
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  gap: '5rem',
+
+  marginTop: '10rem',
+  marginBottom: '5rem',
 
   '@bp1': {
-    minHeight: '100%',
-    height: 'auto',
     flexDirection: 'column',
-    padding: '3rem 0 0 0',
   },
 })
 
@@ -29,21 +35,12 @@ export const HeroContent = styled(motion.div, {
   display: 'flex',
   flexDirection: 'column',
 
-  overflow: 'visible',
-
   justifyContent: 'center',
   alignItems: 'flex-start',
 
-  width: '100%',
-  maxWidth: '1200px',
-  margin: '0 1.5rem',
-
-  zIndex: 3,
-
   h1: {
-    maxWidth: '45%',
-    width: '100%',
-    margin: '1rem 0 1.5rem 0',
+    marginTop: '1rem',
+    marginBottom: '1.5rem',
     lineHeight: '$short',
     textTransform: 'uppercase',
   },
@@ -59,10 +56,6 @@ export const HeroContent = styled(motion.div, {
     flexDirection: 'column',
     width: 'auto',
     alignItems: 'center',
-
-    h1: {
-      maxWidth: '80%',
-    },
 
     'h1, p, h2': {
       textAlign: 'center',
@@ -91,52 +84,35 @@ export const HeroImageWrapper = styled(motion.div, {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  width: '50%',
-  height: '100%',
 
+  position: 'relative',
+
+  flex: 1,
+})
+
+export const HeroImage = styled(Image, {
+  maxWidth: 400,
+  borderRadius: '$md',
+  border: '2px solid $primary',
+  height: '100%',
+  width: '100%',
+  objectFit: 'cover',
+  objectPosition: 'center',
+
+  zIndex: 3,
+})
+
+export const HeroImageBg = styled(Image, {
   position: 'absolute',
-  top: 0,
-  right: 0,
-  bottom: 0,
+
+  height: 'auto',
+  width: 1200,
 
   zIndex: 0,
 
-  img: {
-    width: '100%',
-    height: '100%',
-    objectFit: 'cover',
-    objectPosition: 'right',
-  },
-
-  '&::after': {
-    content: '""',
-    position: 'absolute',
-    width: '100%',
-    height: '100%',
-    zIndex: 1,
-    top: 0,
-    right: 0,
-    background: `linear-gradient(to right, $secondary 0%, rgba(221, 196, 182, 0.5) 25%, transparent 50%, transparent 100%)`,
-  },
-
-  '@bp1': {
-    position: 'relative',
-    marginTop: '5rem',
-
-    width: '100%',
-    height: '100%',
-
-    '&::after': {
-      content: '""',
-      position: 'absolute',
-      width: '100%',
-      height: '100%',
-      zIndex: 1,
-      top: 0,
-      right: 0,
-      background: `linear-gradient(to bottom, $secondary 0%, rgba(221, 196, 182, 0.5) 10%, transparent 20%, transparent 100%)`,
-    },
-  },
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50.65%, -50%)',
 })
 
 export const Notice = styled(motion.section, {
