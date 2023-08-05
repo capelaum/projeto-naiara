@@ -21,13 +21,12 @@ export const HeroWrapper = styled('div', {
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
-  gap: '2.5rem',
+  gap: '5rem',
 
   marginTop: '10rem',
   marginBottom: '5rem',
 
   '@bp1': {
-    gap: '5rem',
     flexDirection: 'column',
   },
 })
@@ -40,6 +39,7 @@ export const HeroContent = styled(motion.div, {
   alignItems: 'flex-start',
 
   h1: {
+    marginTop: '1rem',
     marginBottom: '1.5rem',
     lineHeight: '$short',
     textTransform: 'uppercase',
@@ -86,8 +86,6 @@ export const HeroImageWrapper = styled(motion.div, {
   justifyContent: 'center',
 
   position: 'relative',
-
-  // border: '1px solid red',
 
   flex: 1,
 })
