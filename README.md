@@ -4,7 +4,7 @@
 
 Landing page da Dra. Naiara Galvão, uma ginecologista e obstetra, que atende em Brasília, DF. Saiba mais sobre os seus serviços e agende sua consulta!
 
-<img src=".github/Cover.png" alt="Screenshot da tela inicial da Landing Page - Dra. Naiara Galvão" />
+<img src=".github/Cover2.png" alt="Screenshot da tela inicial da Landing Page - Dra. Naiara Galvão" />
 
 ## :zap: Tech
 
