@@ -100,9 +100,8 @@ export function Footer() {
 
           <Text size="md">
             <strong>Endereço: </strong>
-            Life - Centro Médico Integrado de Saúde - SGAN 608, módulo F, bloco
-            II-A, salas 25 e 27, entrada pela Via L3 Norte - Asa Norte, Brasília
-            - DF, 70830-356
+            Sense Ginecologia - SGAS 614 Edifício Vitrium - Sala 219 - Asa Sul,
+            Brasília - DF, 70200-740
           </Text>
 
           <Text size="md">

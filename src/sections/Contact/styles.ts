@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 import { Heading } from '~/components/Heading'
-import { Text } from '~/components/Text'
-import { keyframes, styled } from '~/styles/stitches.config'
+import { styled } from '~/styles/stitches.config'
 
 export const ContactWrapper = styled('div', {
   width: '100%',
@@ -27,7 +25,7 @@ export const ContactContent = styled(motion.div, {
   alignItems: 'flex-start',
 
   width: '100%',
-  maxWidth: '50%',
+  maxWidth: '45%',
 
   [`& ${Heading}`]: {
     marginBottom: '2.5rem',
@@ -45,65 +43,7 @@ export const ContactInfo = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'flex-start',
-  gap: '1.25rem',
-})
-
-export const shake = keyframes({
-  '0%': { transform: 'rotate(0deg)' },
-  '25%': { transform: 'rotate(10deg)' },
-  '50%': { transform: 'rotate(0deg)' },
-  '75%': { transform: 'rotate(-10deg)' },
-  '100%': { transform: 'rotate(0deg)' },
-})
-
-export const ContactLink = styled(Link, {
-  display: 'flex',
-  alignItems: 'center',
-  gap: '$3',
-  color: '$primary',
-  textDecoration: 'none',
-
-  transition: '$default',
-
-  [`& ${Text}`]: {
-    position: 'relative',
-
-    '&::after': {
-      content: '""',
-      width: 0,
-      height: 2,
-      backgroundColor: '$highlight',
-      position: 'absolute',
-      bottom: 0,
-      left: 0,
-      display: 'block',
-      borderRadius: '$full',
-
-      transition: '$slow',
-    },
-  },
-
-  '&:hover': {
-    svg: {
-      filter: 'brightness(1.1)',
-      animation: `${shake} 0.5s linear infinite`,
-    },
-
-    [`& ${Text}`]: {
-      '&::after': {
-        content: '""',
-        width: '100%',
-        position: 'absolute',
-      },
-    },
-  },
-})
-
-export const ContactItem = styled('div', {
-  display: 'flex',
-  alignItems: 'center',
-  gap: '$3',
-  color: '$primary',
+  gap: '2rem',
 })
 
 export const ContactLocalsList = styled('ul', {

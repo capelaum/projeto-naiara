@@ -4,24 +4,20 @@ import { MdEmail } from 'react-icons/md'
 import { RiInstagramFill, RiTimeFill, RiWhatsappFill } from 'react-icons/ri'
 import { Container } from '~/components/Container'
 import { SectionHeading } from '~/components/SectionHeading'
-import { Text } from '~/components/Text'
+import { ContacItem } from './ContacItem'
+import { ContactLink } from './ContactLink'
 import { maps as mapsData } from './maps'
 import {
   ContactContent,
   ContactInfo,
-  ContactItem,
-  ContactLink,
-  ContactLocalsList,
   ContactMap,
-  ContactMapButton,
   ContactMapContainer,
   ContactMapWrapper,
-  ContactMapsButtonsContainer,
   ContactWrapper,
 } from './styles'
 
 export function Contact() {
-  const [activeMap, setMap] = useState(mapsData[0])
+  const [activeMap] = useState(mapsData[0])
 
   const message = encodeURIComponent(
     'Olá Dra. Naiara, gostaria de saber mais sobre seus serviços.',
@@ -45,56 +41,42 @@ export function Contact() {
             <ContactLink
               href="mailto:naigsilva@gmail.com"
               title="E-mail da Dra. Naiara Galvão"
-            >
-              <MdEmail size={24} />
-              <Text size="lg" weight="medium">
-                naigsilva@gmail.com
-              </Text>
-            </ContactLink>
+              text="naigsilva@gmail.com"
+              icon={MdEmail}
+            />
 
             <ContactLink
               href="https://www.instagram.com/naigalvao"
               title="Instagram da Dra. Naiara Galvão"
               target="_blank"
-              rel="noopener noreferrer"
-            >
-              <RiInstagramFill size={24} />
-              <Text size="lg" weight="medium">
-                @naigalvao
-              </Text>
-            </ContactLink>
+              text="@naigalvao"
+              icon={RiInstagramFill}
+            />
 
             <ContactLink
               href={`https://wa.me/5561992561470?text=${message}`}
               title="Whatsapp da Dra. Naiara Galvão"
               target="_blank"
-              rel="noopener noreferrer"
-            >
-              <RiWhatsappFill size={24} />
-              <Text size="lg" weight="medium">
-                (61) 99256-1470
-              </Text>
-            </ContactLink>
+              text="(61) 99256-1470"
+              icon={RiWhatsappFill}
+            />
 
-            <ContactItem>
-              <RiTimeFill size={24} />
-              <Text size="lg" weight="medium">
-                Segunda a Sexta - 09h às 18h.
-              </Text>
-            </ContactItem>
+            <ContacItem
+              text="Segunda a Sexta - 09h às 18h."
+              icon={RiTimeFill}
+            />
 
-            <ContactItem>
-              <FaMapMarkerAlt size={24} />
-              <Text size="lg" weight="medium">
-                Locais de atendimento
-              </Text>
-            </ContactItem>
+            <ContacItem
+              text="Sense Ginecologia - SGAS 614 Edifício Vitrium - Sala 219 - Asa
+                Sul, Brasília - DF, 70200-740"
+              icon={FaMapMarkerAlt}
+            />
 
-            <ContactLocalsList>
+            {/* <ContactLocalsList>
               {mapsData.map((map) => (
                 <li key={map.id}>{map.address}</li>
               ))}
-            </ContactLocalsList>
+            </ContactLocalsList> */}
           </ContactInfo>
         </ContactContent>
 
@@ -115,7 +97,7 @@ export function Contact() {
             />
           </ContactMapContainer>
 
-          <ContactMapsButtonsContainer>
+          {/* <ContactMapsButtonsContainer>
             {mapsData.map((map) => (
               <ContactMapButton
                 title={`Ver mapa de ${map.title}`}
@@ -124,7 +106,7 @@ export function Contact() {
                 active={map.id === activeMap?.id}
               />
             ))}
-          </ContactMapsButtonsContainer>
+          </ContactMapsButtonsContainer> */}
         </ContactMapWrapper>
       </ContactWrapper>
     </Container>
